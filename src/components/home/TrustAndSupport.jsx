@@ -56,8 +56,8 @@ const TrustAndSupport = () => {
     <section className='bg-[#FFFFFF] p-2 pt-10'>
       <div className='grid place-content-center'>
         <div className='flex flex-col gap-y-2'>
-          <h1 className='text-3xl text-center font-normal text-[#070707] sm:text-4xl md:text-5xl '>Trusted and Supported by</h1>
-          <p className='text-center font-inter text-[14px] text-[#262626]'>Trusted by 100+ Company & Business</p>
+          <h1 className='font-clashDisplay text-3xl text-center font-medium text-[#070707] sm:text-4xl md:text-5xl '>Trusted and Supported by</h1>
+          <p className='text-center font-inter font-[400] text-[14px] text-[#262626]'>Trusted by 100+ Company & Business</p>
         </div>
         {/* List of Companies */}
         <div className='flex flex-col place-self-center sm:flex-row gap-y-5 gap-x-2 mt-10'>
@@ -69,12 +69,12 @@ const TrustAndSupport = () => {
         </div>
 
         <div className='mt-10 place-self-center'>
-          <h1 className='text-[#070707] text-2xl text-center font-semibold'>Empowering Businesses Worldwide</h1>
-          <div className='flex flex-col sm:flex-row gap-y-5 gap-x-20 place-self-center border border-[#A5A5A51A] mt-5 sm:mt-10 p-2'>
+          <h1 className='font-clashDisplay font-medium text-[#070707] text-2xl text-center'>Empowering Businesses Worldwide</h1>
+          <div className='flex flex-col sm:flex-row gap-y-5 gap-x-20 place-self-center border responsive-border mt-5 sm:mt-10 p-2'>
             {content.map((item) => (
               <div key={item.id} className='mt-5 mb-5 grid gap-y-2'>
-                <h1 className='font-bold text-center text-3xl sm:text-4xl'>{item.heading}</h1>
-                <p className='font-inter text-[#8A8A8A] text-center'>{item.description}</p>
+                <h1 className='font-clashDisplay font-medium text-center text-3xl sm:text-4xl'>{item.heading}</h1>
+                <p className='font-inter font-[400] text-[#8A8A8A] text-center'>{item.description}</p>
               </div>
             ))}
           </div>

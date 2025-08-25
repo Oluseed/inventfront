@@ -2,12 +2,72 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("./assets/fonts/ClashDisplay-Light.woff2") format("woff2");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("./assets/fonts/ClashDisplay-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("./assets/fonts/ClashDisplay-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("./assets/fonts/ClashDisplay-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+
+
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
   --font-inter: "Inter", san-serif;
   --font-playfair: "Playfair", san-serif;
+  --font-clashDisplay: "ClashDisplay", san-serif;
 }
 
 #hero-section {
   background-image: url('./assets/images/landing-page-1.png');
+}
+
+#highlight {
+  background-image: url('./assets/images/circle-1.png');
+}
+
+.responsive-border {
+  border-width: 1px 0; /* top and bottom */
+  border-style: solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(165, 165, 165, 0.1) 13.94%,
+    rgba(63, 63, 63, 0.8) 58.17%,
+    rgba(165, 165, 165, 0.1) 89.42%
+  );
+  border-image-slice: 1;
+}
+
+/* Mobile view: sides only */
+@media (max-width: 768px) {
+  .responsive-border {
+    border-width: 0 1px; /* left and right */
+    border-image-source: linear-gradient(
+      180deg,
+      rgba(165, 165, 165, 0.1) 13.94%,
+      rgba(63, 63, 63, 0.8) 58.17%,
+      rgba(165, 165, 165, 0.1) 89.42%
+    );
+  }
 }
