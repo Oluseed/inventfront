@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom"
-import Header from "../components/Navbar"
+import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
 export const HomeLayout = () => {
   return (
-    <div>
-      <Header/>
+    <div className="grid 2xl:place-content-center">
+      <Navbar/>
       <main>
         <Outlet/>
       </main>

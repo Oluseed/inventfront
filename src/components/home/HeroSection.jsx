@@ -2,8 +2,8 @@ import buttonIcon from '../../assets/images/button-icon-1.svg'
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="bg-cover bg-center h-110 md:h-screen flex">
-      <div className="text-white p-4 sm:mb-20 md:ml-10 flex flex-col gap-y-5 justify-end w-full mb-4">
+    <section id="hero-section" className="bg-cover bg-center h-110 md:h-150 flex">
+      <div className="text-white p-4 sm:mb-10 md:ml-10 md:mb-30 flex flex-col justify-end gap-y-5 w-full mb-4">
         <div>
           <h1 className="font-clashDisplay font-medium text-4xl lg:text-6xl">
             Streamline your <br />

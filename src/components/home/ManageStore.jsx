@@ -35,7 +35,7 @@ const ManageStore = () => {
         </div>
         <div className='flex flex-col md:flex-row'>
           <div>
-            <img src={image_1} alt="landing-image" className='px-10 w-100 h-full md:w-200 lg:h-150 place-self-center ' />
+            <img src={image_1} alt="landing-image" className='px-10 w-100 h-full md:w-150 lg:h-auto place-self-center ' />
           </div>
           <div className='mt-10'>
             <div className='mx-5 flex flex-col gap-y-3'>
