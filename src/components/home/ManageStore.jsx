@@ -28,10 +28,10 @@ const data = [
 const ManageStore = () => {
 
   return (
-    <section className='#FFFFFF grid'>
+    <section className='bg-[#FFFFFF] grid'>
       <div className='place-self-center mt-10 flex flex-col gap-y-5'>
         <div>
-          <h1 className='font-clashDisplay font-medium text-3xl text-center sm:text-4xl md:text-5xl'><span className='border-[#FF4C05] border-2 rounded-4xl py-1 px-2 '>Manage Store  </span>without border <br />with olastute</h1>
+          <h1 className='mt-10 font-clashDisplay font-medium text-3xl text-center sm:text-4xl md:text-5xl'><span className='border-[#FF4C05] border-2 rounded-4xl py-1 px-2 '>Manage Store  </span>without border <br />with olastute</h1>
         </div>
         <div className='flex flex-col md:flex-row'>
           <div>

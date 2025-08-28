@@ -46,6 +46,9 @@
 #highlight {
   background-image: url('./assets/images/circle-1.png');
 }
+#get-started {
+  background-image: url('./assets/images/get-started-section-image.png');
+}
 
 .responsive-border {
   border-width: 1px 0; /* top and bottom */

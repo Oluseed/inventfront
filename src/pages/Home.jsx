@@ -3,6 +3,8 @@ import HeroSection from '../components/home/HeroSection'
 import TrustAndSupport from '../components/home/TrustAndSupport'
 import HeroSection2 from '../components/home/HeroSection2'
 import ManageStore from '../components/home/ManageStore'
+import GetStartedSection from '../components/home/GetStartedSection'
+import Inventories from '../components/home/Inventories'
 const Home = () => {
   return (
     <div>
@@ -10,6 +12,8 @@ const Home = () => {
       <TrustAndSupport/>
       <HeroSection2/>
       <ManageStore/>
+      <Inventories/>
+      <GetStartedSection/>
     </div>
   )
 }
