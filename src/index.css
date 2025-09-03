@@ -50,6 +50,10 @@
   background-image: url('./assets/images/get-started-section-image.png');
 }
 
+#pricing-hero {
+  background-image: url('./assets/images/pricing-hero-section.png');
+}
+
 .responsive-border {
   border-width: 1px 0; /* top and bottom */
   border-style: solid;
