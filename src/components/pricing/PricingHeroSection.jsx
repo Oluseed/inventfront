@@ -74,7 +74,7 @@ const PricingHeroSection = () => {
 
             {/* Button below */}
             <button
-              className="flex items-center gap-x-2 bg-gradient-to-r from-[#FF4C05] to-[#FF7A3D] hover:from-[#e0440b] hover:to-[#d65f28]
+              className="flex lg:mr-5 items-center gap-x-2 bg-gradient-to-r from-[#FF4C05] to-[#FF7A3D] hover:from-[#e0440b] hover:to-[#d65f28]
                px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-md hover:shadow-lg
                font-montserrat text-sm sm:text-base font-medium text-white
                transition-all duration-300 transform hover:scale-105 group"
