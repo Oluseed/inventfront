@@ -10,6 +10,7 @@ export const AppRoute = () => {
       {/* Route in the HomeLayout */}
       <Route path="/" element={<HomeLayout/>}>
         <Route index element={<Home/>}/>
+        <Route path={"pricing"} element={<Pricing/>}/>
       </Route>
       {/* Invalid pages */}
       <Route path="*" element={<div>Not Found</div>}/>
