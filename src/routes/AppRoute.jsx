@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import { HomeLayout } from "../layouts/HomeLayout";
 import Home from "../pages/Home";
 import Pricing from "../pages/Pricing";
+import About from "../pages/About";
+import { Contact } from "../pages/Contact";
 
 export const AppRoute = () => {
   return (
@@ -11,6 +13,9 @@ export const AppRoute = () => {
       <Route path="/" element={<HomeLayout/>}>
         <Route index element={<Home/>}/>
         <Route path={"pricing"} element={<Pricing/>}/>
+        <Route path={"about"} element={<About/>}/>
+        <Route path={"contact"} element={<Contact/>}/>
+        <Route path={"product"} element={<Product/>}/>
       </Route>
       {/* Invalid pages */}
       <Route path="*" element={<div>Not Found</div>}/>
