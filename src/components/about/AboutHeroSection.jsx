@@ -3,6 +3,19 @@ import profile1 from '../../assets/images/image-1.png';
 import profile2 from '../../assets/images/image-2.png';
 import icon1 from '../../assets/images/pricing-icon-1.svg'
 
+
+const people = [
+  { id: 1, img: "https://randomuser.me/api/portraits/men/32.jpg" },
+  { id: 2, img: "https://randomuser.me/api/portraits/women/44.jpg" },
+  { id: 3, img: "https://randomuser.me/api/portraits/men/41.jpg" },
+  { id: 4, img: "https://randomuser.me/api/portraits/women/65.jpg" },
+  { id: 5, img: "https://randomuser.me/api/portraits/women/55.jpg" },
+  { id: 6, img: "https://randomuser.me/api/portraits/men/50.jpg" },
+  { id: 7, img: "https://randomuser.me/api/portraits/men/12.jpg" },
+  { id: 8, img: "https://randomuser.me/api/portraits/women/26.jpg" },
+  { id: 9, img: "https://randomuser.me/api/portraits/men/15.jpg" },
+];
+
 export default function AboutHeroSection() {
   return (
     <div className="relative bg-[#fffff] overflow-hidden">
@@ -37,20 +50,20 @@ export default function AboutHeroSection() {
         </div>
       </div>
       {/* Photo Grid */}
-<div className="mt-16 space-y-6 max-w-6xl mx-auto">
-  {/* Row 1 */}
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-    <img src={profile1} alt="" className="w-full rounded-2xl shadow-md" />
-    <img src={profile2} alt="" className="w-full rounded-2xl shadow-md" />
-    <img src={profile1} alt="" className="hidden md:block w-full rounded-2xl shadow-md" />
-  </div>
-  {/* Row 2 with offset */}
-  <div className="grid grid-cols-2 md:grid-cols-3 gap-6 ml-8">
-    <img src={profile2} alt="" className="w-full rounded-2xl shadow-md" />
-    <img src={profile1} alt="" className="w-full rounded-2xl shadow-md" />
-    <img src={profile2} alt="" className="hidden md:block w-full rounded-2xl shadow-md" />
-  </div>
-</div>
+  <div className="relative w-[90%] max-w-5xl h-[400px]">
+        {people.map((person) => (
+          <div
+            key={person.id}
+            className={`absolute rounded-full overflow-hidden shadow-md border-4 border-white w-20 h-20 md:w-24 md:h-24 ${person.className}`}
+          >
+            <img
+              src={person.img}
+              alt="profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
 
 
 
