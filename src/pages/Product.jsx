@@ -1,94 +1,90 @@
-import React from 'react';
+import React from "react";
 
-export const Product = () => {
+export default function POSLandingClone() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      {/* Hero Section */}
-      <div className="text-center mb-16 relative">
-        {/* Decorative icons - would be replaced with actual SVGs */}
-        <img 
-          src="./assets/images/pricing-icon-1.svg" 
-          alt="" 
-          className="absolute -top-4 left-20 w-16 h-16 opacity-70"
-        />
-        <img 
-          src="./assets/images/pricing-icon-2.svg" 
-          alt="" 
-          className="absolute top-12 right-24 w-14 h-14 opacity-70"
-        />
-        <img 
-          src="./assets/images/pricing-icon-3.svg" 
-          alt="" 
-          className="absolute bottom-4 left-32 w-12 h-12 opacity-70"
-        />
-        <img 
-          src="./assets/images/pricing-icon-4.svg" 
-          alt="" 
-          className="absolute top-20 left-1/4 w-10 h-10 opacity-70"
-        />
-        <img 
-          src="./assets/images/pricing-icon-5.svg" 
-          alt="" 
-          className="absolute bottom-8 right-32 w-14 h-14 opacity-70"
-        />
-        
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-          Tools to manage every part of your business
+    <div className="relative max-w-6xl mx-auto px-6 py-12">
+      {/* Decorative emoji images */}
+      <img
+        className="absolute w-10 h-10 -top-6 left-[6%]"
+        src="/images/emoji-sunglasses.png"
+        alt="emoji"
+      />
+      <img
+        className="absolute w-10 h-10 -top-6 right-[6%]"
+        src="/images/emoji-fire.png"
+        alt="emoji"
+      />
+
+      {/* Curly arrow images */}
+      <img
+        className="absolute w-12 h-12 -top-2 left-[44%] rotate-[15deg]"
+        src="/images/curly-1.png"
+        alt="curly"
+      />
+      <img
+        className="absolute w-12 h-12 -bottom-3 right-[18%] -rotate-[30deg]"
+        src="/images/curly-2.png"
+        alt="curly"
+      />
+
+      {/* Header */}
+      <header className="text-center mb-10">
+        <h1 className="text-3xl md:text-4xl font-bold mb-3">
+          Tools to manage every part
+          <br />
+          of your business
         </h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Felis orci tempor sed in sit aliquam. Sit donec egestas ridiculus 
-          porttitor amet. Convallis in pulvinar mauris. Aliquet sit libero convallis 
-          quis proin egestas viverra.
+        <p className="text-gray-500 max-w-2xl mx-auto">
+          Powerful point-of-sale, inventory and customer tools built to help
+          modern retailers and restaurants run faster — designed to scale as you
+          grow.
         </p>
-      </div>
+      </header>
 
-      <div className="w-20 h-1 bg-gray-300 mx-auto mb-12"></div>
-
-      {/* Point of Sale Section */}
-      <div className="mb-12">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-8 text-center">
-          Point of sale
-        </h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-medium text-gray-800 mb-2">Fast Order Processing</h3>
-            <p className="text-gray-600">Speed up order processing in your restaurant with customizable sales screen and item modifiers</p>
-          </div>
-          
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-medium text-gray-800 mb-2">Discount Management</h3>
-            <p className="text-gray-600">Easily apply discounts and run effective corrections</p>
-          </div>
-          
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-medium text-gray-800 mb-2">Flexible Order Management</h3>
-            <p className="text-gray-600">Create, save, and edit orders, letting customers pay when it's convenient</p>
-          </div>
-          
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-medium text-gray-800 mb-2">Refund System</h3>
-            <p className="text-gray-600">Offer full or partial refunds for customer conversions</p>
-          </div>
-          
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-medium text-gray-800 mb-2">Cash Tracking</h3>
-            <p className="text-gray-600">Keep track of cash movements, including sales, refunds, pay-ins/outs, and the expected cash amount in a drawer</p>
-          </div>
-          
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="font-medium text-gray-800 mb-2">Offline Capability</h3>
-            <p className="text-gray-600">Record sales offline and the data will automatically sync when the internet connection is restored</p>
-          </div>
+      {/* Grid Layout */}
+      <section className="grid md:grid-cols-2 gap-10 items-center">
+        {/* POS Image */}
+        <div className="bg-white rounded-xl shadow-md overflow-hidden">
+          <img
+            src="/images/pos-register.jpg"
+            alt="Point of sale register"
+            className="w-full h-auto"
+          />
         </div>
-      </div>
 
-      {/* CTA Button */}
-      <div className="text-center">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-200">
-          Explore Now
-        </button>
-      </div>
+        {/* Text Content */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Point of sale</h2>
+          <ul className="list-disc pl-5 space-y-2 text-gray-600">
+            <li>
+              Turn any device into a powerful point-of-sale system suitable for
+              restaurants and retail.
+            </li>
+            <li>
+              Faster checkout flows and multi-tender payments to speed up
+              operations.
+            </li>
+            <li>
+              Create, save, and edit orders — letting customers pay when it’s
+              most convenient.
+            </li>
+            <li>
+              Offline-first capabilities so transactions continue during
+              connectivity issues.
+            </li>
+            <li>
+              Keep track of cash movements, refunds, and shift reports with audit
+              logs.
+            </li>
+          </ul>
+          <a
+            href="#"
+            className="inline-block mt-4 px-5 py-3 bg-[#f9532d] text-white font-semibold rounded-lg shadow hover:opacity-90 transition"
+          >
+            Learn more
+          </a>
+        </div>
+      </section>
     </div>
   );
-};
+}
