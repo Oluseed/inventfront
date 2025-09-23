@@ -9,7 +9,7 @@ export default function AboutHeroSection() {
   return (
     <div className="relative bg-[#fffff] overflow-hidden">
       {/* Main content container */}
-      <div className="relative mt-10 z-15 flex flex-col lg:flex-row items-center justify-center px-4 py-10 gap-10 lg:gap-1">
+      <div className="relative mt-10 lg:mt-30 z-15 flex flex-col lg:flex-row items-center justify-center px-4 py-10 gap-10 lg:gap-1">
         {/* Left images */}
         <div className="flex flex-row sm:flex-col items-center space-x-4 sm:space-x-0 sm:space-y-4 ">
           <img src={icon1} alt="icon1" className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full object-cover" />
