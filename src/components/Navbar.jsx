@@ -36,8 +36,8 @@ const Navbar = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden font-inter md:text-[12px] lg:text-[14px] md:flex items-center gap-10">
-          {["/", "/pricing", "/about", "/product", "/contact"].map((path, i) => {
-            const names = ["Home", "Pricing", "About us", "Our Product", "Contact Us"];
+          {["/", "/pricing", "/about", "/product", "/contact", "/shop"].map((path, i) => {
+            const names = ["Home", "Pricing", "About us", "Our Product", "Contact Us", "Shop"];
             return (
               <NavLink
                 key={path}
@@ -109,7 +109,7 @@ const Navbar = () => {
               borderBottom: "1px solid rgba(255,255,255,0.1)",
             }}
           >
-            {["/", "/pricing", "/about", "/product", "/contact"].map(
+            {["/", "/pricing", "/about", "/product", "/contact", "/shop"].map(
               (path, i) => {
                 const names = [
                   "Home",
@@ -117,6 +117,7 @@ const Navbar = () => {
                   "About us",
                   "Our Product",
                   "Contact Us",
+                  "Shop"
                 ];
                 return (
                   <NavLink
