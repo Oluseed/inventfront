@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import logo from "../assets/images/olastute logo.png";
+import { NavLink } from "react-router-dom";
 
 const socialIcons = [
   { id: 1, icon: <FaInstagram size={22} className="text-black" /> },
@@ -26,7 +28,7 @@ const itemVariants = {
 
 const Footer = () => {
   return (
-    <footer className="bg-black sm:h-screen text-white grid">
+    <footer className="bg-black sm:h-120 text-white grid">
       <motion.div
         className="p-4 sm:px-10 flex flex-col sm:flex-row sm:gap-x-10 sm:justify-between"
         initial="hidden"
@@ -36,7 +38,13 @@ const Footer = () => {
       >
         {/* Address + Logo + Socials */}
         <motion.div className="grid gap-y-5 font-inter" variants={itemVariants}>
-          <div className="bg-white p-4 rounded"></div>
+          <div>
+            <img 
+              src={logo} 
+              alt="logo" 
+              className="w-20 md:w-30 lg:w-40 h-30 lg:h-50 object-contain"
+            />
+          </div>
           <h1>4517 Washington, DC</h1>
           <div className="grid gap-y-3 sm:flex sm:gap-x-2">
             {socialIcons.map((item) => (
@@ -60,10 +68,9 @@ const Footer = () => {
         >
           <h1 className="font-semibold">COMPANY</h1>
           <div className="font-light text-[14px] mt-5 grid gap-y-5">
-            <h1>About</h1>
-            <h1>Blog</h1>
-            <h1>Pricing</h1>
-            <h1>Contact Us</h1>
+            <NavLink to={'/about'}><h1>About</h1></NavLink>
+            <NavLink to={"/pricing"}><h1>Pricing</h1></NavLink>
+            <NavLink to={'/contact'}> <h1>Contact Us</h1></NavLink>
           </div>
         </motion.div>
 

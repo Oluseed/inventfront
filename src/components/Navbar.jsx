@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import buttonIcon from "../assets/images/button-icon-1.svg";
+import logo from "../assets/images/olastute logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,16 +24,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 w-full z-20 text-white border-b border-white/10"
+      className="fixed top-0 left-0 w-full z-20 text-white border-b border-white/10 h-[70px]"
       style={{
         background: "rgba(0, 0, 0, 0.3)",
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(12px)",
       }}
     >
-      <div className="flex items-center justify-between px-4 md:px-2 lg:px-8 py-3">
+      <div className="flex items-center justify-between px-4 md:px-2 lg:px-8 py-3 h-full">
         {/* Logo */}
-        <div className="w-10 h-10 bg-white rounded-lg" />
+        <div className="flex items-center">
+          <img
+            src={logo}
+            alt="logo"
+            className="object-contain w-20 mt-2 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-30 lg:h-30"
+          />
+        </div>
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden font-inter md:text-[12px] lg:text-[14px] md:flex items-center gap-10">
@@ -59,7 +66,7 @@ const Navbar = () => {
           <button className="bg-transparent border gap-3 cursor-pointer border-white text-white rounded-md px-6 py-2 font-medium flex items-center hover:bg-white hover:text-black transition">
             Log in
           </button>
-          <button className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-2 py-2 place-content-center pt-2 gap-x-1 rounded text-[14px] text-white transition-all duration-300 group">
+          <button onClick={() => alert("Sorry this section is not available yet!!, you can request a demo")} className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-3 py-2 gap-x-2 rounded text-[14px] text-white transition-all duration-300 group">
             <img
               src={buttonIcon}
               alt="button-icon"
@@ -74,7 +81,6 @@ const Navbar = () => {
           className="md:hidden text-orange-500 focus:outline-none relative z-30"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {/* Animate hamburger lines */}
           <motion.span
             className="block w-6 h-[2px] bg-white mb-1"
             animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 6 : 0 }}
@@ -138,7 +144,7 @@ const Navbar = () => {
             <button className="bg-transparent border gap-3 border-white text-white rounded-md px-6 py-2 font-medium flex items-center hover:bg-white hover:text-black transition text-base">
               <FaUser size={16} /> Log in
             </button>
-            <button className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-4 py-2 gap-x-2 rounded font-montserrat text-[14px] text-white transition-all duration-300 group">
+            <button onClick={() => alert('Not available yet ')} className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-4 py-2 gap-x-2 rounded font-montserrat text-[14px] text-white transition-all duration-300 group">
               <img
                 src={buttonIcon}
                 alt="button-icon"

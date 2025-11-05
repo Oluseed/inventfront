@@ -10,21 +10,22 @@ const data = [
     id: 1,
     icon: icon_1,
     heading: 'Zero Delay',
-    description: 'Aliquet est odio adipiscing adipiscing. Dictum tempus at sagittis tincidunt mi cum proin lectus.'
+    description: 'Experience instant updates on stock levels, orders, and item movements — no waiting or manual refresh needed.'
   }, 
   {
     id: 2,
     icon: icon_2,
     heading: 'No Hidden Fee',
-    description: 'Aliquet est odio adipiscing adipiscing. Dictum tempus at sagittis tincidunt mi cum proin lectus.'
+    description: 'Enjoy full transparency with our pricing — no setup costs or hidden charges, just simple and affordable inventory management.'
   }, 
   {
     id: 3,
     icon: icon_3,
     heading: "Alerts & Notifications",
-    description: 'Receive alerts and notifications for various inventory events.'
+    description: 'Stay informed with real-time alerts for low stock, new orders, or inventory changes, ensuring you never miss a critical update.'
   }
-]
+];
+
 
 const ManageStore = () => {
   return (

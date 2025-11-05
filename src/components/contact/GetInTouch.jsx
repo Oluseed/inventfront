@@ -21,7 +21,7 @@ export const GetInTouch = () => {
     {
       id: 1,
       icon: EmailIcon,
-      title: "hellolastute@gmail.com",
+      title: "support@yourbrand.com",
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ export const GetInTouch = () => {
       id: 3,
       icon: LocationIcon,
       title:
-        "6 Destiny Plaza, Alpha Bus Stop, Lekki-Epe Expressway, Lagos State, Nigeria",
+        "6 Destiny Plaza, Alpha Bus Stop, Lekki–Epe Expressway, Lagos State, Nigeria",
     },
   ];
 
@@ -43,10 +43,11 @@ export const GetInTouch = () => {
         <h1 className="font-clashDisplay font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white text-center">
           Get in touch with us
         </h1>
+
         <p className="font-inter font-normal text-sm md:text-base text-[#FFFFFF] text-center max-w-2xl mx-auto px-4 sm:px-8 mt-4">
-          Felis orci tempor sed in sit aliquam. Sit donec egestas ridiculus
-          porttitor amet. Convallis in pulvinar mauris. Aliquet sit libero
-          convallis quis proin egestas viverra.
+          Have a question about our inventory solutions or need help managing
+          your business more efficiently? Our support team is always ready to
+          assist. Reach out and we’ll get back to you as soon as possible.
         </p>
 
         {/* Cards */}

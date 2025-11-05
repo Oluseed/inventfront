@@ -1,100 +1,96 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import buttonIcon from "../../assets/images/button-icon-1.svg";
-import icon_1 from '../../assets/images/pricing-icon-1.svg'
-import icon_2 from '../../assets/images/pricing-icon-2.svg'
-import icon_3 from '../../assets/images/pricing-icon-3.svg'
-import icon_4 from '../../assets/images/pricing-icon-4.svg'
-import icon_5 from '../../assets/images/pricing-icon-5.svg'
+import React from 'react';
+import { motion } from 'framer-motion';
+import icon_1 from '../../assets/images/pricing-icon-1.svg';
+import icon_2 from '../../assets/images/pricing-icon-2.svg';
+import icon_3 from '../../assets/images/pricing-icon-3.svg';
+import icon_4 from '../../assets/images/pricing-icon-4.svg';
+import icon_5 from '../../assets/images/pricing-icon-5.svg';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-}
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+};
 
 const Section1 = () => {
   return (
-    <section 
-      id='pricing-hero' 
-      className='bg-cover bg-center h-110 md:h-160 flex'
-    >
-      <motion.div 
-        className='mt-25 lg:mt-40 flex flex-col gap-y-2 w-full'
+    <section id="pricing-hero" className="bg-cover bg-center h-110 md:h-160 flex">
+      <motion.div
+        className="mt-25 lg:mt-40 flex flex-col gap-y-2 w-full"
         initial="hidden"
         animate="show"
         variants={{
           hidden: { opacity: 0 },
-          show: { opacity: 1, transition: { staggerChildren: 0.2 } }
+          show: { opacity: 1, transition: { staggerChildren: 0.2 } },
         }}
       >
         {/* Content */}
-        <div className='text-center lg:ml-5'>
+        <div className="text-center lg:ml-5">
           {/* Row 1 */}
-          <motion.div 
+          <motion.div
             className="md:mt-10 flex flex-wrap items-center justify-center px-4"
             variants={fadeInUp}
           >
             <motion.img
               src={icon_1}
-              alt="icon-1"
+              alt="inventory-icon"
               className="w-10 mr-2 sm:mr-10 h-10 sm:w-15 sm:h-15 md:w-20 md:h-20"
               whileHover={{ rotate: 15, scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 200 }}
+              transition={{ type: 'spring', stiffness: 200 }}
             />
             <h1 className="font-clashDisplay text-[#070707] text-2xl sm:text-3xl md:text-5xl font-medium text-center">
-              Tools to manage every part 
+              Tools to manage every part
             </h1>
 
             <motion.img
               src={icon_2}
-              alt="icon-2"
+              alt="inventory-icon-2"
               className="w-6 sm:mr-10 h-6 sm:w-8 sm:h-8 md:w-15 md:h-15"
               whileHover={{ rotate: -15, scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 200 }}
+              transition={{ type: 'spring', stiffness: 200 }}
             />
           </motion.div>
 
           {/* Row 2 */}
-          <motion.div 
+          <motion.div
             className="flex flex-wrap items-center justify-center px-4 sm:ml-10 md:ml-20"
             variants={fadeInUp}
           >
             <h1 className="font-clashDisplay text-[#070707] text-2xl sm:text-3xl md:text-5xl font-medium text-center">
-              of your business
+              of your inventory and sales
             </h1>
             <motion.img
               src={icon_3}
-              alt="icon-3"
+              alt="inventory-icon-3"
               className="w-6 sm:ml-10 h-6 sm:w-10 sm:h-10 md:w-20 md:h-20"
               whileHover={{ rotate: 20, scale: 1.1 }}
             />
           </motion.div>
-          
+
           {/* Paragraph */}
-          <motion.div 
+          <motion.div
             className="flex items-start sm:mx-2 md:mx-10"
             variants={fadeInUp}
           >
             <div className="flex-shrink-0 hidden sm:block">
               <motion.img
                 src={icon_4}
-                alt="icon-4"
+                alt="gear-icon"
                 className="w-6 h-6 sm:w-10 sm:h-10 md:w-20 md:h-20"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 1 }}
               />
             </div>
-            <p className="ml-3 sm:ml-4 text-[#5E5E5E] text-sm sm:text-xl leading-relaxed">
-              Felis orci tempor sed in sit aliquam. 
-              Sit donec egestas ridiculus porttitor amet. 
-              Convallis in pulvinar convallis proin imperdiet mauris.
-              Aliquet sit libero convallis quis proin egestas viverra.
+            <p className="ml-3 sm:ml-4 text-[#5E5E5E] text-sm sm:text-xl leading-relaxed font-inter">
+              Simplify your daily operations with real-time stock tracking,
+              automated restocking alerts, and advanced analytics. 
+              Our platform helps you gain full visibility and control over 
+              your business performance — anytime, anywhere.
             </p>
           </motion.div>
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Section1
+export default Section1;

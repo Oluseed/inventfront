@@ -6,6 +6,7 @@ import icon_2 from '../../assets/images/pricing-icon-2.svg'
 import icon_3 from '../../assets/images/pricing-icon-3.svg'
 import icon_4 from '../../assets/images/pricing-icon-4.svg'
 import icon_5 from '../../assets/images/pricing-icon-5.svg'
+import { NavLink } from 'react-router-dom';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -88,10 +89,11 @@ const PricingHeroSection = () => {
               />
             </div>
             <p className="ml-3 sm:ml-4 text-[#5E5E5E] text-sm sm:text-xl leading-relaxed">
-              Felis orci tempor sed in sit aliquam. 
-              Sit donec egestas ridiculus porttitor amet. 
-              Convallis in pulvinar convallis proin imperdiet mauris.
-              Aliquet sit libero convallis quis proin egestas viverra.
+              Our pricing is designed to keep things simple, transparent, and fair. 
+              You only pay for what you use — no hidden charges or complicated plans. 
+              Whether you’re a small business or a large enterprise, our flexible 
+              structure ensures you get the tools you need to manage, track, and 
+              grow your inventory efficiently.
             </p>
           </motion.div>
 
@@ -108,23 +110,25 @@ const PricingHeroSection = () => {
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             />
 
-            <motion.button
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex lg:mr-5 items-center gap-x-2 bg-gradient-to-r from-[#FF4C05] to-[#FF7A3D] 
-               hover:from-[#e0440b] hover:to-[#d65f28]
-               px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-md hover:shadow-lg
-               font-montserrat text-sm sm:text-base font-medium text-white
-               transition-all duration-300 group"
-            >
-              <motion.img
-                src={buttonIcon}
-                alt="button-icon"
-                className="w-5 h-5 transform transition-all duration-300"
-                whileHover={{ x: 5 }}
-              />
-              Contact Us
-            </motion.button>
+            <NavLink to={'/contact'}>
+              <motion.button
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex lg:mr-5 items-center gap-x-2 bg-gradient-to-r from-[#FF4C05] to-[#FF7A3D] 
+                hover:from-[#e0440b] hover:to-[#d65f28]
+                px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-md hover:shadow-lg
+                font-montserrat text-sm sm:text-base font-medium text-white
+                transition-all duration-300 group"
+              >
+                <motion.img
+                  src={buttonIcon}
+                  alt="button-icon"
+                  className="w-5 h-5 transform transition-all duration-300"
+                  whileHover={{ x: 5 }}
+                />
+                Contact Us
+              </motion.button>
+            </NavLink>
           </motion.div>
         </div>
       </motion.div>

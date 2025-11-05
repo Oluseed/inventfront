@@ -30,7 +30,7 @@ const TrustAndSupport = () => {
     <section className="bg-[#FFFFFF] p-2 pt-10">
       <div className="grid place-content-center">
         {/* Title + Subtitle */}
-        <motion.div
+        {/* <motion.div
           className="flex flex-col gap-y-2"
           initial="hidden"
           whileInView="show"
@@ -43,10 +43,10 @@ const TrustAndSupport = () => {
           <p className="text-center font-inter font-[400] text-[14px] text-[#262626]">
             Trusted by 100+ Company & Business
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* List of Companies */}
-        <motion.div
+        {/* <motion.div
           className="flex flex-col place-self-center sm:flex-row gap-y-5 gap-x-2 mt-10"
           initial="hidden"
           whileInView="show"
@@ -67,7 +67,7 @@ const TrustAndSupport = () => {
               <img src={company.image} alt={company.alt} />
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* Stats Section */}
         <motion.div
@@ -77,7 +77,7 @@ const TrustAndSupport = () => {
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeUp}
         >
-          <h1 className="font-clashDisplay font-medium text-[#070707] text-2xl text-center">
+          <h1 className="font-clashDisplay text-3xl text-center font-medium text-[#070707] sm:text-4xl md:text-5xl">
             Empowering Businesses Worldwide
           </h1>
 

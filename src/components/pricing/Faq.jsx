@@ -5,28 +5,33 @@ import { PiPlusCircle } from 'react-icons/pi';
 
 const data = [
   {
-    title: 'How does the system works?',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.'
+    title: 'How does the system work?',
+    description:
+      'Our inventory management system helps you track products, stock levels, and sales in real-time. Once items are added, the system automatically updates quantities as sales or purchases occur, giving you accurate and up-to-date insights.'
   },
   {
     title: 'How do I create an account?',
-    description: 'Simply sign up with your email and password. You will receive a verification link to activate your account.'
+    description:
+      'Click on the “Sign Up” button, fill in your business details, and verify your email address. Once verified, you can start adding products, managing stock, and accessing your analytics dashboard.'
   },
   {
     title: 'Is my data secure?',
-    description: 'Yes! We use end-to-end encryption and industry-standard security practices to keep your data safe.'
+    description:
+      'Absolutely. We use bank-grade encryption, secure cloud storage, and regular backups to ensure your business data is safe and private at all times.'
   },
   {
-    title: 'Can I use the service on mobile?',
-    description: 'Absolutely! Our platform is mobile-friendly and works seamlessly on all devices.'
+    title: 'Can I access the platform on mobile?',
+    description:
+      'Yes, our platform is fully responsive and works smoothly on smartphones and tablets, allowing you to manage your inventory from anywhere.'
   },
   {
     title: 'Do you offer customer support?',
-    description: 'Yes, we provide 24/7 support through chat and email. Our team is always here to help you.'
+    description:
+      'Yes, our support team is available 24/7 via chat and email to help you resolve issues or guide you through any feature of the system.'
   }
 ];
 
-// Animation variants for staggered list
+// Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -49,7 +54,7 @@ const Faq = () => {
 
   return (
     <section className="pb-5">
-      {/* Section heading with fade-in */}
+      {/* Section heading */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -67,10 +72,10 @@ const Faq = () => {
         viewport={{ once: true }}
         className="mt-3 text-[13px] md:text-xl text-[#8D8D8D] font-inter text-center"
       >
-        At eu lobortis pretium tincidunt amet lacus ut aenean aliquet
+        Everything you need to know about using our inventory management system.
       </motion.p>
 
-      {/* FAQ List with staggered animation */}
+      {/* FAQ List */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
