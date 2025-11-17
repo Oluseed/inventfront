@@ -34,6 +34,6 @@ export const products = [
     price: 250000,
     spec: "Intel Core i7, 16GB RAM, 512GB SSD, 13-inch Retina Display",
     image: Image_4,
-    category: "Phones"
+    category: "SPrinter"
   }
 ]

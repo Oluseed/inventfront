@@ -44,7 +44,7 @@ const ManageStore = () => {
           </h1>
         </motion.div>
 
-        <div className='flex flex-col md:flex-row items-center'>
+        <div className='mt-5 flex flex-col md:flex-row items-center'>
           
           {/* Animated Image */}
           <motion.div

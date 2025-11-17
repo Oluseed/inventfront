@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import user_01 from "../../assets/images/user.png";
 
-const data = [
+const reviewsData = [
   {
     id: 1,
     image: user_01,
@@ -47,87 +47,96 @@ const data = [
 
 const Reviews = () => {
   const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
   const scrollRef = useRef(null);
 
-  // Auto-advance for mobile carousel
+  /** Auto-carousel for Mobile */
   useEffect(() => {
-    const next = () => {
-      setIndex((prev) => (prev + 1) % data.length);
-    };
-    timeoutRef.current = setInterval(next, 4000); // every 4s
-    return () => {
-      if (timeoutRef.current) clearInterval(timeoutRef.current);
-    };
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % reviewsData.length);
+    }, 4000);
+    return () => clearInterval(interval);
   }, []);
 
-  // Smooth scroll for desktop
+  /** Desktop infinite scroll */
   useEffect(() => {
     const container = scrollRef.current;
-    if (!container) return;
+    if (!container || window.innerWidth < 1024) return;
 
-    let animationFrame;
-    const scrollSpeed = 0.5;
+    let frame;
+    const speed = 0.5;
 
-    const smoothScroll = () => {
-      if (container) {
-        container.scrollLeft += scrollSpeed;
-        if (container.scrollLeft >= container.scrollWidth / 2) {
-          container.scrollLeft = 0;
-        }
+    const autoScroll = () => {
+      container.scrollLeft += speed;
+      if (container.scrollLeft >= container.scrollWidth / 2) {
+        container.scrollLeft = 0;
       }
-      animationFrame = requestAnimationFrame(smoothScroll);
+      frame = requestAnimationFrame(autoScroll);
     };
 
-    if (window.innerWidth >= 1024) {
-      animationFrame = requestAnimationFrame(smoothScroll);
-    }
-
-    return () => cancelAnimationFrame(animationFrame);
+    frame = requestAnimationFrame(autoScroll);
+    return () => cancelAnimationFrame(frame);
   }, []);
 
+  /** Animation variants */
+  const slideVariants = {
+    initial: { opacity: 0, x: 100, scale: 0.9 },
+    animate: { opacity: 1, x: 0, scale: 1 },
+    exit: { opacity: 0, x: -100, scale: 0.9 },
+  };
+
   return (
-    <section className="w-full py-16 bg-[#FDFDFD]">
+    <section className="w-full py-20 bg-[#FDFDFD]">
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="font-clashDisplay font-medium text-3xl md:text-4xl lg:text-5xl text-center">
           Hear what they say about us
         </h1>
 
-        {/* --- Mobile View (Carousel) --- */}
-        <div className="lg:hidden relative mt-10 flex justify-center items-center px-4 overflow-hidden">
+        {/* Mobile Carousel */}
+        <div className="lg:hidden mt-10 flex justify-center overflow-hidden px-4">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: 100, scale: 0.9 }}
-              animate={{ opacity: 1, x: 0, scale: 1 }}
-              exit={{ opacity: 0, x: -100, scale: 0.9 }}
+              variants={slideVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
               transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="max-w-lg w-full mb-10  rounded-3xl bg-white shadow-md p-6"
+              className="w-full max-w-lg bg-white p-6 rounded-[30px] shadow-md"
               style={{
                 borderImage: "linear-gradient(90deg, #FF8453, #FFE1D6) 1",
+                borderWidth: "4px",
+                borderStyle: "solid",
+                borderRadius: "30px",
               }}
             >
-              <div className="flex items-center  gap-3 mb-4">
+              {/* Header */}
+              <div className="flex items-center gap-3 mb-4">
                 <img
-                  src={data[index].image}
-                  alt={data[index].name}
-                  className="w-12 h-12 rounded-lg object-cover"
+                  src={reviewsData[index].image}
+                  alt={reviewsData[index].name}
+                  className="w-12 h-12 rounded-xl object-cover"
                 />
-                <div className="grid font-inter">
-                  <h1 className="text-[#667085] font-medium">{data[index].name}</h1>
-                  <p className="text-[#000000] text-[14px]">{data[index].role}</p>
+                <div>
+                  <h1 className="text-[#667085] font-medium">
+                    {reviewsData[index].name}
+                  </h1>
+                  <p className="text-black text-[14px]">
+                    {reviewsData[index].role}
+                  </p>
                 </div>
               </div>
+
+              {/* Review Text */}
               <p className="text-[#272727] font-inter text-[14px] leading-relaxed">
-                {data[index].review}
+                {reviewsData[index].review}
               </p>
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* Dots for mobile navigation */}
+        {/* Mobile dots */}
         <div className="lg:hidden flex justify-center mt-4 gap-2">
-          {data.map((_, i) => (
+          {reviewsData.map((_, i) => (
             <button
               key={i}
               onClick={() => setIndex(i)}
@@ -138,33 +147,36 @@ const Reviews = () => {
           ))}
         </div>
 
-        {/* --- Desktop View (Auto-Scrolling Row) --- */}
+        {/* Desktop Scroll */}
         <div
           ref={scrollRef}
-          className="hidden lg:flex mt-10 gap-6 overflow-x-hidden relative"
+          className="hidden lg:flex mt-12 gap-6 overflow-x-hidden"
         >
-          {[...data, ...data].map((user, i) => (
+          {[...reviewsData, ...reviewsData].map((user, i) => (
             <div
               key={i}
-              className="flex-shrink-0 font-inter w-[28%] mb-5 bg-white border-4 rounded-2xl shadow-md p-6 transition-transform duration-500 hover:scale-[1.02]"
+              className="flex-shrink-0 w-[28%] bg-white rounded-[30px] shadow-md p-6 hover:scale-[1.02] transition-transform duration-300"
               style={{
-                border: "solid transparent",
                 borderImage: "linear-gradient(90deg, #FF8453, #FFE1D6) 1",
+                borderWidth: "4px",
+                borderStyle: "solid",
+                borderRadius: "30px",
               }}
             >
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src={user.image}
                   alt={user.name}
-                  className="w-12 h-12 rounded-lg object-cover"
+                  className="w-12 h-12 rounded-xl object-cover"
                 />
                 <div>
                   <h1 className="text-[#667085] font-medium text-[15px]">
                     {user.name}
                   </h1>
-                  <p className="text-[#000000] font-medium text-[13px]">{user.role}</p>
+                  <p className="text-black text-[13px]">{user.role}</p>
                 </div>
               </div>
+
               <p className="text-[#272727] font-inter text-[14px] leading-relaxed">
                 {user.review}
               </p>

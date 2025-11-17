@@ -81,7 +81,7 @@ const TrustAndSupport = () => {
             Empowering Businesses Worldwide
           </h1>
 
-          <motion.div
+          {/* <motion.div
             className="flex flex-col sm:flex-row gap-y-5 gap-x-20 place-self-center border responsive-border mt-5 sm:mt-10 p-2"
             initial="hidden"
             whileInView="show"
@@ -105,7 +105,7 @@ const TrustAndSupport = () => {
                 </p>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
