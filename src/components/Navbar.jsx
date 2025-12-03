@@ -4,10 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import buttonIcon from "../assets/images/button-icon-1.svg";
 import logo from "../assets/images/olastute logo.png";
-
+import { previewUrl } from "../lib/utils";
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+  const [menuOpen, setMenuOpen] = useState(false); 
   const menuVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -63,16 +62,16 @@ const Navbar = () => {
 
         {/* Buttons (Desktop) */}
         <div className="hidden md:flex items-center text-[12px] gap-2 md:gap-4">
-          <button className="bg-transparent border gap-3 cursor-pointer border-white text-white rounded-md px-6 py-2 font-medium flex items-center hover:bg-white hover:text-black transition">
+          {/* <button className="bg-transparent border gap-3 cursor-pointer border-white text-white rounded-md px-6 py-2 font-medium flex items-center hover:bg-white hover:text-black transition">
             Log in
-          </button>
-          <button onClick={() => alert("Sorry this section is not available yet!!, you can request a demo")} className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-3 py-2 gap-x-2 rounded text-[14px] text-white transition-all duration-300 group">
+          </button> */}
+          <button onClick={() => window.open(previewUrl(), '_blank')} className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-3 py-2 gap-x-2 rounded text-[14px] text-white transition-all duration-300 group">
             <img
               src={buttonIcon}
               alt="button-icon"
               className="w-5 h-5 transform group-hover:translate-x-1 transition-all duration-300"
             />
-            Start 14 days Free Trial
+              Preview Our System
           </button>
         </div>
 
@@ -141,16 +140,16 @@ const Navbar = () => {
                 );
               }
             )}
-            <button className="bg-transparent border gap-3 border-white text-white rounded-md px-6 py-2 font-medium flex items-center hover:bg-white hover:text-black transition text-base">
+            {/* <button className="bg-transparent border gap-3 border-white text-white rounded-md px-6 py-2 font-medium flex items-center hover:bg-white hover:text-black transition text-base">
               <FaUser size={16} /> Log in
-            </button>
-            <button onClick={() => alert('Not available yet ')} className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-4 py-2 gap-x-2 rounded font-montserrat text-[14px] text-white transition-all duration-300 group">
+            </button> */}
+            <button onClick={() => window.open(previewUrl(), '_blank')}  className="flex bg-[#FF4C05] cursor-pointer hover:bg-[#c25124] px-4 py-2 gap-x-2 rounded font-montserrat text-[14px] text-white transition-all duration-300 group">
               <img
                 src={buttonIcon}
                 alt="button-icon"
                 className="w-5 h-5 transform group-hover:translate-x-1 transition-all duration-300"
               />
-              Start 14 days Free Trial
+              Preview Our System
             </button>
           </motion.div>
         )}
