@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import buttonIcon from "../../assets/images/button-icon-1.svg";
 import { NavLink } from "react-router-dom";
+import { requestServiceUrl } from "../../lib/utils";
 
 const HeroSection = () => {
   const [showDemoForm, setShowDemoForm] = useState(false);
@@ -96,7 +97,7 @@ const HeroSection = () => {
         <motion.div variants={itemVariants} className="flex gap-x-2">
           {/* CTA Button */}
           <motion.button
-            onClick={() => setShowDemoForm(true)}
+             onClick={() => window.open(requestServiceUrl(), '_blank')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex bg-[#FF4C05] hover:bg-[#c25124] px-3 py-2 gap-x-1 rounded font-montserrat text-[14px] text-white transition group"
@@ -106,7 +107,7 @@ const HeroSection = () => {
               alt="button-icon"
               className="w-5 h-5 transform group-hover:translate-x-1 transition"
             />
-            View Demo
+            Request a Demo
           </motion.button>
 
           {/* Secondary Button */}
