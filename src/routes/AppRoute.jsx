@@ -8,6 +8,9 @@ import { Contact } from "../pages/Contact";
 import { Product } from "../pages/Product";
 import { Shop } from "../pages/Shop";
 import ScrollToTop from "../components/ScrollToTop";
+import Admin from "../pages/Admin";
+import ProtectedRoute from "../ProtectedRoute";
+import AdminDashboard from "../components/admin/AdminDashboard";
 
 export const AppRoute = () => {
   return (
@@ -23,6 +26,13 @@ export const AppRoute = () => {
           <Route path={"product"} element={<Product/>}/>
           <Route path={"shop"} element={<Shop/>}/>
         </Route>
+        {/* Admin Signup */}
+        <Route path="/admin" element={<Admin/>}/>
+        <Route path="/dashboard" element={
+          <ProtectedRoute> 
+            <AdminDashboard/>
+          </ProtectedRoute>
+        }/>
         {/* Invalid pages */}
         <Route path="*" element={<div>Not Found</div>}/>
       </Routes>
