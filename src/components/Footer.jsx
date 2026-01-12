@@ -45,7 +45,7 @@ const Footer = () => {
               className="w-20 md:w-30 lg:w-40 h-30 lg:h-50 object-contain"
             />
           </div>
-          <h1>4517 Washington, DC</h1>
+          <h1>Osun State, Nigeria</h1>
           <div className="grid gap-y-3 sm:flex sm:gap-x-2">
             {socialIcons.map((item) => (
               <motion.div

@@ -64,7 +64,7 @@ const Currencies = () => {
           initial="hidden" 
           whileInView="show" 
           viewport={{ once: true }}
-          className='grid mx-3 my-5 gap-y-5 md:flex md:gap-x-5'
+          className='grid mx-3 my-4 gap-y-5 md:flex md:gap-x-5'
         >
           {dataOne.map((data) => (
             <motion.div 

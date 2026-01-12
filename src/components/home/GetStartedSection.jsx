@@ -7,7 +7,7 @@ const GetStartedSection = () => {
     <section className="mb-10 mt-10 grid">
       <motion.div
         id="get-started"
-        className="bg-center bg-cover h-100 flex flex-col gap-y-5 place-content-center mx-4 sm:my-10 sm:mx-20 rounded-2xl"
+        className="bg-center bg-cover h-100 flex flex-col gap-y-5 place-content-center mx-4 sm:my-10 sm:mx-40 rounded-2xl"
         style={{
           backgroundImage: `url(${image})`,
         }}

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import buttonIcon from "../../assets/images/button-icon-1.svg";
 import { NavLink } from "react-router-dom";
 import { requestServiceUrl } from "../../lib/utils";
+import { useState } from "react";
 
 const HeroSection = () => {
   const [showDemoForm, setShowDemoForm] = useState(false);
@@ -107,7 +108,7 @@ const HeroSection = () => {
               alt="button-icon"
               className="w-5 h-5 transform group-hover:translate-x-1 transition"
             />
-            Request a Demo
+            Request for customization 
           </motion.button>
 
           {/* Secondary Button */}

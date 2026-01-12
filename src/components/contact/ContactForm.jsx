@@ -167,11 +167,11 @@ export const ContactForm = () => {
             <p>
               Prefer to talk directly? Reach us at{" "}
               <span className="text-[#FF4C05] font-medium">
-                support@yourbrand.com
+                info@olastute.com
               </span>{" "}
               or call{" "}
               <span className="text-[#FF4C05] font-medium">
-                +234 800 000 0000
+                +234 806 685 9951
               </span>
               .
             </p>

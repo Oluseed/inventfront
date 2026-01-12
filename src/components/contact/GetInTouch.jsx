@@ -21,18 +21,18 @@ export const GetInTouch = () => {
     {
       id: 1,
       icon: EmailIcon,
-      title: "support@yourbrand.com",
+      title: "info@olastute.com",
     },
     {
       id: 2,
       icon: PhoneIcon,
-      title: ["+234 816 883 6029", "+234 813 972 3429"],
+      title: ["+234 806 685 9951"],
     },
     {
       id: 3,
       icon: LocationIcon,
       title:
-        "6 Destiny Plaza, Alpha Bus Stop, Lekki–Epe Expressway, Lagos State, Nigeria",
+        "Olaoluwa Estate, Okinni, Osun State, Nigeria",
     },
   ];
 

@@ -8,7 +8,7 @@ const About = () => {
     <div>
       <AboutHeroSection />
       <Roots/>
-      <Teams/>
+      {/* <Teams/> */}
     </div>
   )
 }

@@ -94,7 +94,7 @@ const Faq = () => {
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFaq(index)}
             >
-              <h1 className="font-inter text-[#3E3D3D] font-[600] text-[15px] md:text-xl">
+              <h1 className="font-inter text-[#3E3D3D] font-[600] text-[13px] md:text-[17px]">
                 {faq.title}
               </h1>
               <div>
