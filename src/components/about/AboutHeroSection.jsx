@@ -1,12 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import profile1 from '../../assets/images/image-1.png';
 import profile2 from '../../assets/images/image-2.png';
 import icon1 from '../../assets/images/pricing-icon-1.svg';
 
 export default function AboutHeroSection() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative bg-[#ffffff] overflow-hidden">
-      {/* Main content container */}
       <div className="relative mt-10 lg:mt-30 z-15 flex flex-col lg:flex-row items-center justify-center px-4 py-10 gap-10 lg:gap-1">
         
         {/* Left images */}
@@ -26,16 +28,15 @@ export default function AboutHeroSection() {
         {/* Main heading + subtext */}
         <div className="text-center lg:max-w-4xl mx-2">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-clashDisplay font-medium text-gray-900 leading-tight">
-            Simplifying how you manage
+            {t('aboutHero.title.line1')}
           </h1>
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-clashDisplay font-medium leading-tight">
-            <span className="text-gray-900">your </span>
-            <span className="text-orange-500">inventory operations</span>
+            <span className="text-gray-900">{t('aboutHero.title.line2')}</span>{' '}
+            <span className="text-orange-500">{t('aboutHero.title.highlight')}</span>
           </h1>
 
           <p className="text-[#5E5E5E] text-sm md:text-base leading-relaxed font-inter mt-4 px-2">
-            Track stock in real time, prevent shortages, and make smarter restocking decisions with ease. 
-            Our system gives you full visibility into your business inventory — anytime, anywhere.
+            {t('aboutHero.subtitle')}
           </p>
         </div>
 

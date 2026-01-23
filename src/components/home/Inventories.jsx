@@ -1,9 +1,12 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import image_1 from '../../assets/images/inventory-image01.png'
-import image_2 from '../../assets/images/inventory-image02.png'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import image_1 from '../../assets/images/inventory-image01.png';
+import image_2 from '../../assets/images/inventory-image02.png';
 
 const Inventories = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-[#FFFFFF] grid">
       <div className="place-self-center mt-20 flex flex-col gap-y-5">
@@ -16,7 +19,11 @@ const Inventories = () => {
           viewport={{ once: true }}
         >
           <h1 className="font-clashDisplay font-medium text-3xl text-center sm:text-4xl md:text-5xl">
-            Explore seamless with <span className="border-[#FF4C05] border-2 rounded-4xl py-1 px-2">olastute smart</span> inventory solutions for your business
+            {t('inventory.heading.before')}{' '}
+            <span className="border-[#FF4C05] border-2 rounded-4xl py-1 px-2">
+              {t('inventory.heading.highlight')}
+            </span>{' '}
+            {t('inventory.heading.after')}
           </h1>
         </motion.div>
 
@@ -28,10 +35,7 @@ const Inventories = () => {
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: { staggerChildren: 0.3 }
-            }
+            show: { opacity: 1, transition: { staggerChildren: 0.3 } },
           }}
         >
 
@@ -42,14 +46,16 @@ const Inventories = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div>
-              <h1 className="font-clashDisplay text-2xl font-medium">Inventory Management</h1>
+              <h1 className="font-clashDisplay text-2xl font-medium">
+                {t('inventory.cards.management.title')}
+              </h1>
               <p className="font-inter text-[#5E5E5E] text-[13px]">
-                Efficiently manage your inventory with real-time updates and comprehensive tracking.
+                {t('inventory.cards.management.desc')}
               </p>
             </div>
             <motion.img
               src={image_1}
-              alt="inventory"
+              alt={t('inventory.cards.management.title')}
               className="w-40 self-end"
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
@@ -63,14 +69,16 @@ const Inventories = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div>
-              <h1 className="font-clashDisplay text-2xl font-medium">Expirations Tracking</h1>
+              <h1 className="font-clashDisplay text-2xl font-medium">
+                {t('inventory.cards.expirations.title')}
+              </h1>
               <p className="font-inter text-[#5E5E5E] text-[13px]">
-                Receive alerts and notifications when products are nearing expiration dates to minimize waste.
+                {t('inventory.cards.expirations.desc')}
               </p>
             </div>
             <motion.img
               src={image_2}
-              alt="expiration"
+              alt={t('inventory.cards.expirations.title')}
               className="absolute bottom-0 right-0 w-32 transform -rotate-10"
               animate={{ rotate: [-10, -5, -10] }}
               transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
@@ -84,9 +92,11 @@ const Inventories = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div>
-              <h1 className="font-clashDisplay text-2xl font-medium">Low Stock Alerts</h1>
+              <h1 className="font-clashDisplay text-2xl font-medium">
+                {t('inventory.cards.lowStock.title')}
+              </h1>
               <p className="font-inter text-[#5E5E5E] text-[13px]">
-                Stay on top of stock levels with automatic alerts when products reach low quantities.
+                {t('inventory.cards.lowStock.desc')}
               </p>
             </div>
           </motion.div>
@@ -98,9 +108,11 @@ const Inventories = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div>
-              <h1 className="font-clashDisplay text-2xl font-medium">Sales Analytics</h1>
+              <h1 className="font-clashDisplay text-2xl font-medium">
+                {t('inventory.cards.salesAnalytics.title')}
+              </h1>
               <p className="font-inter text-[#5E5E5E] text-[13px]">
-                Gain insights into your sales performance with detailed analytics and reports.
+                {t('inventory.cards.salesAnalytics.desc')}
               </p>
             </div>
           </motion.div>
@@ -112,9 +124,11 @@ const Inventories = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div>
-              <h1 className="font-clashDisplay text-2xl font-medium">Product Tracking</h1>
+              <h1 className="font-clashDisplay text-2xl font-medium">
+                {t('inventory.cards.productTracking.title')}
+              </h1>
               <p className="font-inter text-[#5E5E5E] text-[13px]">
-                Track each product's movement within your inventory for improved visibility.
+                {t('inventory.cards.productTracking.desc')}
               </p>
             </div>
           </motion.div>
@@ -122,7 +136,7 @@ const Inventories = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Inventories
+export default Inventories;

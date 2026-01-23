@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "pricing": "Pricing",
+    "product": "Our Product",
+    "shop": "Shop",
+    "contact": "Contact Us",
+    "viewDemo": "View Demo",
+    "language": "Language"
+  },
+  "common": {
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "close": "Close"
+  },
+  "hero": {
+    "title": {
+      "line1": "Streamline your",
+      "line2": "business with smart",
+      "highlight": "inventory",
+      "line3": "and analytics"
+    },
+    "subtitle": "Empower your business with advanced inventory management and analytics.",
+    "request": "Request for customization",
+    "contact": "Contact Us",
+    "form": {
+      "title": "Request for customize",
+      "subtitle": "Enter your details below. We’ll send you a demo link once ready.",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "details": "Additional Details (optional)"
+    }
+  },
+  "hero2": {
+    "laptopAlt": "Laptop view of Olastute software",
+    "ipadAlt": "iPad view of Olastute software",
+    "phoneAlt": "Phone view of Olastute software"
+  },
+  "getStarted": {
+    "title": "Olastute Software fits just right for your business",
+    "cta": "Get Started Now"
+  },
+  "inventory": {
+    "heading": {
+      "before": "Explore seamless with",
+      "highlight": "olastute smart",
+      "after": "inventory solutions for your business"
+    },
+    "cards": {
+      "management": {
+        "title": "Inventory Management",
+        "desc": "Efficiently manage your inventory with real-time updates and tracking."
+      },
+      "expirations": {
+        "title": "Expirations Tracking",
+        "desc": "Receive alerts when products are nearing expiration to minimize waste."
+      },
+      "lowStock": {
+        "title": "Low Stock Alerts",
+        "desc": "Stay on top of stock levels with automatic alerts."
+      },
+      "salesAnalytics": {
+        "title": "Sales Analytics",
+        "desc": "Gain insights into your sales performance with detailed reports."
+      },
+      "productTracking": {
+        "title": "Product Tracking",
+        "desc": "Track each product's movement within your inventory for visibility."
+      }
+    }
+  },
+  "manageStore": {
+    "title": {
+      "highlight": "Manage Store",
+      "rest": "without border with olastute"
+    },
+    "imageAlt": "Manage store visual illustration",
+    "cards": {
+      "zeroDelay": {
+        "heading": "Zero Delay",
+        "description": "Experience instant updates on stock levels, orders, and item movements — no waiting or manual refresh needed."
+      },
+      "noHiddenFee": {
+        "heading": "No Hidden Fee",
+        "description": "Enjoy full transparency with our pricing — no setup costs or hidden charges, just simple and affordable inventory management."
+      },
+      "alerts": {
+        "heading": "Alerts & Notifications",
+        "description": "Stay informed with real-time alerts for low stock, new orders, or inventory changes, ensuring you never miss a critical update."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Hear what they say about us",
+    "1": {
+      "name": "Alix Beckstrand",
+      "role": "Operations Associate at Healf",
+      "text": "Amazing App. Gives a great visual on current and future inventory. We decreased stockout from 4% to 1% in 2 months with Prediko. That’s hundreds of thousands of extra revenue per year unlocked! Team are super supportive to any requests too! Would highly recommend!"
+    },
+    "2": {
+      "name": "John Smith",
+      "role": "Head of Operations at XYZ",
+      "text": "Prediko changed the way we manage inventory. The predictive analytics saved us a lot of wasted stock and boosted our efficiency. Absolutely recommend!"
+    },
+    "3": {
+      "name": "Sarah Johnson",
+      "role": "Supply Chain Manager at ABC Corp",
+      "text": "The insights we got from Prediko are unmatched. Stockouts are rare now and we’ve saved huge amounts by optimizing stock levels."
+    },
+    "4": {
+      "name": "Michael Lee",
+      "role": "Operations Director at DEF",
+      "text": "Simple, intuitive, and powerful. The alerts saved us so many times from overselling. A must-have for any business."
+    },
+    "5": {
+      "name": "Anna Kim",
+      "role": "Inventory Lead at GHI Ltd",
+      "text": "Game-changer for inventory. Forecasting accuracy is spot-on and the support team is great!"
+    }
+  },
+  "aboutHero": {
+  "title": {
+    "line1": "Simplifying how you manage",
+    "line2": "your",
+    "highlight": "inventory operations"
+  },
+  "subtitle": "Track stock in real time, prevent shortages, and make smarter restocking decisions with ease. Our system gives you full visibility into your business inventory — anytime, anywhere."
+},
+  "roots": {
+    "heading": {
+      "part1": "Empowering",
+      "part2": "smart inventory management"
+    },
+    "subtitle": "We’re building the future of inventory control — smarter, faster, and more connected for businesses of all sizes.",
+    "mission": {
+      "iconAlt": "mission-icon",
+      "title": "Our Mission",
+      "description": "To simplify how businesses track, manage, and optimize their inventory by providing intuitive, automated, and data-driven solutions that save time and eliminate waste."
+    },
+    "vision": {
+      "iconAlt": "vision-icon",
+      "title": "Our Vision",
+      "description": "To become the go-to inventory management platform that helps businesses stay in control, make informed decisions, and grow confidently in a data-driven world."
+    }
+  },
+    "currencies": {
+    "heading": {
+      "highlight": "Currencies",
+      "rest": "we support"
+    },
+    "dataOne": [
+      { "text": "Nigerian Naira" },
+      { "text": "Ghanaian Cedi" },
+      { "text": "US Dollar" }
+    ],
+    "dataTwo": [
+      { "text": "Euro" },
+      { "text": "Kenyan Shillings" },
+      { "text": "UAE Dirham" }
+    ],
+    "dataThree": [
+      { "text": "CA CFAO - XAF" },
+      { "text": "Ugandan Shilling" }
+    ]
+  },
+  "faq": {
+    "heading": {
+      "highlight": "Frequently",
+      "rest": "Asked Questions"
+    },
+    "subtitle": "Everything you need to know about using our inventory management system.",
+    "items": [
+      {
+        "title": "How does the system work?",
+        "description": "Our inventory management system helps you track products, stock levels, and sales in real-time. Once items are added, the system automatically updates quantities as sales or purchases occur, giving you accurate and up-to-date insights."
+      },
+      {
+        "title": "How do I create an account?",
+        "description": "Click on the “Sign Up” button, fill in your business details, and verify your email address. Once verified, you can start adding products, managing stock, and accessing your analytics dashboard."
+      },
+      {
+        "title": "Is my data secure?",
+        "description": "Absolutely. We use bank-grade encryption, secure cloud storage, and regular backups to ensure your business data is safe and private at all times."
+      },
+      {
+        "title": "Can I access the platform on mobile?",
+        "description": "Yes, our platform is fully responsive and works smoothly on smartphones and tablets, allowing you to manage your inventory from anywhere."
+      },
+      {
+        "title": "Do you offer customer support?",
+        "description": "Yes, our support team is available 24/7 via chat and email to help you resolve issues or guide you through any feature of the system."
+      }
+    ]
+  },
+  "pricingHero": {
+    "row1": {
+      "title1": "Transparent Collection",
+      "and": "and",
+      "title2": "Transparency"
+    },
+    "row2": {
+      "title": "Disbursement Pricing"
+    },
+    "paragraph": "Our pricing is designed to keep things simple, transparent, and fair. You only pay for what you use — no hidden charges or complicated plans. Whether you’re a small business or a large enterprise, our flexible structure ensures you get the tools you need to manage, track, and grow your inventory efficiently.",
+    "contactButton": "Contact Us"
+  },
+  "products": {
+    "list": [
+      {
+        "id": 1,
+        "title": "Point of Sale",
+        "content": [
+          "Speed up order processing in your restaurant with customizable sales screen and item modifiers",
+          "Easily apply discounts and run effective promotions",
+          "Create, save, and edit orders, letting customers pay when it’s convenient",
+          "Offer full or partial refunds for customer convenience",
+          "Keep track of cash movements, including sales, refunds, pay-ins/outs, and the expected cash amount in a drawer"
+        ],
+        "navigateTo": "#"
+      },
+      {
+        "id": 2,
+        "title": "Inventory Management",
+        "content": [
+          "Track stock levels in real time",
+          "Get automated low-stock alerts",
+          "Monitor sales by various payment types with breakdowns of cash, card, and other payment methods"
+        ],
+        "navigateTo": "#"
+      },
+      {
+        "id": 3,
+        "title": "Customer Loyalty",
+        "content": [
+          "Reward your loyal customers with points",
+          "Offer targeted discounts based on purchase history",
+          "Connect a receipt printer, kitchen printer, and cash drawer for enhanced operations",
+          "Send orders to the kitchen display to reduce errors, speed up service, and keep operations organized with a paperless system",
+          "Connect the Loyverse Customer Display app to show order details to your customers for greater transparency and convenience"
+        ],
+        "navigateTo": "#"
+      }
+    ],
+    "button": "Explore Now"
+  },
+  "section1": {
+    "row1": {
+      "title1": "Tools to manage every part"
+    },
+    "row2": {
+      "title": "of your inventory and sales"
+    },
+    "paragraph": "Simplify your daily operations with real-time stock tracking, automated restocking alerts, and advanced analytics. Our platform helps you gain full visibility and control over your business performance — anytime, anywhere."
+  },
+  "filterBar": {
+    "categories": {
+      "All": "All",
+      "Electronics": "Electronics",
+      "Furniture": "Furniture",
+      "Clothing": "Clothing",
+      "Accessories": "Accessories",
+      "Kitchen": "Kitchen"
+    }
+  },
+  "productCard": {
+    "buttons": {
+      "buyNow": "Buy Now"
+    },
+    "pricePrefix": "#"
+  },
+  "productModal": {
+    "whatsapp": {
+      "button": "Chat on WhatsApp",
+      "messagePrefix": "Hello, I want to make an inquiry about the product: "
+    },
+    "close": "✕"
+  },
+  "contactForm": {
+    "heading": "We are tailored to your needs",
+    "description": "Whether you’re looking to collaborate, request a quote, or simply ask a few questions — we’re here to help. Our team will get back to you within 24 hours. Let’s bring your ideas to life together.",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "message": "Message",
+    "messagePlaceholder": "Tell us more about your project or inquiry...",
+    "terms": "I agree with Terms of Use and Privacy Policy",
+    "submit": "Send Your Message",
+    "contactDetails": "Prefer to talk directly? Reach us at {{email}} or call {{phone}}."
+  },
+  "getInTouch": {
+    "heading": "Get in touch with us",
+    "description": "Have a question about our inventory solutions or need help managing your business more efficiently? Our support team is always ready to assist. Reach out and we’ll get back to you as soon as possible."
+  },
+  "footer": {
+    "company": "COMPANY",
+    "legal": "LEGAL",
+    "resources": "RESOURCES",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact Us",
+    "legalPage": "Legal",
+    "terms": "Terms and Condition",
+    "privacy": "Privacy Policy",
+    "others": "Others",
+    "payment": "Secured Payment Gateways",
+    "location": "Osun State, Nigeria"
+  }
+}

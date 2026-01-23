@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/images/olastute logo.png";
 import { NavLink } from "react-router-dom";
 
@@ -12,13 +13,9 @@ const socialIcons = [
   { id: 4, icon: <FaLinkedin size={22} className="text-black" /> },
 ];
 
-// Variants for staggered animations
 const containerVariants = {
   hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.2 },
-  },
+  visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
 };
 
 const itemVariants = {
@@ -27,6 +24,8 @@ const itemVariants = {
 };
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-black sm:h-120 text-white grid">
       <motion.div
@@ -39,13 +38,13 @@ const Footer = () => {
         {/* Address + Logo + Socials */}
         <motion.div className="grid gap-y-5 font-inter" variants={itemVariants}>
           <div>
-            <img 
-              src={logo} 
-              alt="logo" 
+            <img
+              src={logo}
+              alt="logo"
               className="w-20 md:w-30 lg:w-40 h-30 lg:h-50 object-contain"
             />
           </div>
-          <h1>Osun State, Nigeria</h1>
+          <h1>{t("footer.location")}</h1>
           <div className="grid gap-y-3 sm:flex sm:gap-x-2">
             {socialIcons.map((item) => (
               <motion.div
@@ -62,40 +61,31 @@ const Footer = () => {
         </motion.div>
 
         {/* Company */}
-        <motion.div
-          className="flex flex-col mt-10 gap-y-3 font-inter"
-          variants={itemVariants}
-        >
-          <h1 className="font-semibold">COMPANY</h1>
+        <motion.div className="flex flex-col mt-10 gap-y-3 font-inter" variants={itemVariants}>
+          <h1 className="font-semibold">{t("footer.company")}</h1>
           <div className="font-light text-[14px] mt-5 grid gap-y-5">
-            <NavLink to={'/about'}><h1>About</h1></NavLink>
-            <NavLink to={"/pricing"}><h1>Pricing</h1></NavLink>
-            <NavLink to={'/contact'}> <h1>Contact Us</h1></NavLink>
+            <NavLink to={"/about"}>{t("footer.about")}</NavLink>
+            <NavLink to={"/pricing"}>{t("footer.pricing")}</NavLink>
+            <NavLink to={"/contact"}>{t("footer.contact")}</NavLink>
           </div>
         </motion.div>
 
         {/* Legal */}
-        <motion.div
-          className="flex flex-col mt-10 gap-y-3 font-inter"
-          variants={itemVariants}
-        >
-          <h1 className="font-semibold">LEGAL</h1>
+        <motion.div className="flex flex-col mt-10 gap-y-3 font-inter" variants={itemVariants}>
+          <h1 className="font-semibold">{t("footer.legal")}</h1>
           <div className="font-light text-[14px] mt-5 grid gap-y-5">
-            <h1>Legal</h1>
-            <h1>Terms and Condition</h1>
-            <h1>Privacy Policy</h1>
+            <h1>{t("footer.legalPage")}</h1>
+            <h1>{t("footer.terms")}</h1>
+            <h1>{t("footer.privacy")}</h1>
           </div>
         </motion.div>
 
         {/* Resources */}
-        <motion.div
-          className="flex flex-col mt-10 gap-y-3 font-inter"
-          variants={itemVariants}
-        >
-          <h1 className="font-semibold">RESOURCES</h1>
+        <motion.div className="flex flex-col mt-10 gap-y-3 font-inter" variants={itemVariants}>
+          <h1 className="font-semibold">{t("footer.resources")}</h1>
           <div className="font-light text-[14px] mt-5 grid gap-y-5">
-            <h1>Others</h1>
-            <h1>Secured Payment Gateways</h1>
+            <h1>{t("footer.others")}</h1>
+            <h1>{t("footer.payment")}</h1>
           </div>
         </motion.div>
       </motion.div>

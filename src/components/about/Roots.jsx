@@ -1,16 +1,16 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import missionIcon from '../../assets/images/about-us-icon-1.png';
 import expenseIcon from '../../assets/images/about-us-icon-2.png';
-import { motion } from 'framer-motion';
 
 const Roots = () => {
+  const { t } = useTranslation();
+
   // Animation variants
   const container = {
     hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.3 },
-    },
+    show: { opacity: 1, transition: { staggerChildren: 0.3 } },
   };
 
   const fadeUp = {
@@ -40,15 +40,14 @@ const Roots = () => {
         {/* Heading */}
         <motion.div className="grid place-content-center gap-y-3" variants={fadeUp}>
           <h1 className="mt-4 font-clashDisplay font-medium text-3xl md:text-5xl text-center">
-            Empowering{" "}
+            {t('roots.heading.part1')}{' '}
             <span className="block md:inline border-2 p-2 w-50 place-self-center rounded-4xl border-[#FF4C05]">
-              smart inventory management
+              {t('roots.heading.part2')}
             </span>
           </h1>
 
           <p className="px-1 font-inter text-center font-normal text-[#5E5E5E] text-[14px]">
-            We’re building the future of inventory control — smarter, faster, and 
-            more connected for businesses of all sizes.
+            {t('roots.subtitle')}
           </p>
         </motion.div>
 
@@ -66,16 +65,14 @@ const Roots = () => {
               className="bg-[#FC692E]/30 rounded-full w-16 h-16 grid place-content-center"
               variants={bounceIcon}
             >
-              <img src={missionIcon} alt="mission-icon" className="w-8 h-8" />
+              <img src={missionIcon} alt={t('roots.mission.iconAlt')} className="w-8 h-8" />
             </motion.div>
             <div className="flex flex-col gap-y-3">
               <h1 className="font-clashDisplay font-medium text-2xl md:text-3xl">
-                Our Mission
+                {t('roots.mission.title')}
               </h1>
               <p className="font-inter text-[14px] text-[#5E5E5E]">
-                To simplify how businesses track, manage, and optimize their inventory 
-                by providing intuitive, automated, and data-driven solutions that 
-                save time and eliminate waste.
+                {t('roots.mission.description')}
               </p>
             </div>
           </motion.div>
@@ -89,16 +86,14 @@ const Roots = () => {
               className="bg-[#0080FF]/30 rounded-full w-16 h-16 grid place-content-center"
               variants={bounceIcon}
             >
-              <img src={expenseIcon} alt="vision-icon" className="w-8 h-8" />
+              <img src={expenseIcon} alt={t('roots.vision.iconAlt')} className="w-8 h-8" />
             </motion.div>
             <div className="flex flex-col gap-y-3">
               <h1 className="font-clashDisplay font-medium text-2xl md:text-3xl">
-                Our Vision
+                {t('roots.vision.title')}
               </h1>
               <p className="font-inter text-[13.5px] text-[#5E5E5E]">
-                To become the go-to inventory management platform that helps 
-                businesses stay in control, make informed decisions, and grow 
-                confidently in a data-driven world.
+                {t('roots.vision.description')}
               </p>
             </div>
           </motion.div>

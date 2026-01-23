@@ -11,6 +11,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Admin from "../pages/Admin";
 import ProtectedRoute from "../ProtectedRoute";
 import AdminDashboard from "../components/admin/AdminDashboard";
+import WhatsappButton from "../components/WhatsappButton";
 
 export const AppRoute = () => {
   return (
@@ -36,6 +37,7 @@ export const AppRoute = () => {
         {/* Invalid pages */}
         <Route path="*" element={<div>Not Found</div>}/>
       </Routes>
+      < WhatsappButton/>
     </>
     
   )

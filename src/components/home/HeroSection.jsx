@@ -4,6 +4,8 @@ import buttonIcon from "../../assets/images/button-icon-1.svg";
 import { NavLink } from "react-router-dom";
 import { requestServiceUrl } from "../../lib/utils";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 
 const HeroSection = () => {
   const [showDemoForm, setShowDemoForm] = useState(false);
@@ -13,6 +15,7 @@ const HeroSection = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const { t } = useTranslation();
 
   // Animation Variants
   const containerVariants = {
@@ -78,20 +81,19 @@ const HeroSection = () => {
         animate="show"
       >
         <motion.div variants={itemVariants}>
-          <h1 className="font-clashDisplay font-medium text-4xl lg:text-6xl leading-tight">
-            Streamline your <br />
-            business with smart <br />
+          <h1 className="font-clashDisplay font-medium text-4xl lg:text-6xl">
+            {t("hero.title.line1")} <br />
+            {t("hero.title.line2")} <br />
             <span className="border-[#FFFF00] border-2 rounded-4xl py-1 px-2">
-              inventory
+              {t("hero.title.highlight")}
             </span>{" "}
-            and analytics
+            {t("hero.title.line3")}
           </h1>
         </motion.div>
 
         <motion.div variants={itemVariants}>
           <p className="text-white text-[15px] font-inter md:text-[17px]">
-            Empower your business with advanced inventory management and
-            analytics.
+            {t("hero.subtitle")}
           </p>
         </motion.div>
 
@@ -108,7 +110,7 @@ const HeroSection = () => {
               alt="button-icon"
               className="w-5 h-5 transform group-hover:translate-x-1 transition"
             />
-            Request for customization 
+            {t("hero.request")}
           </motion.button>
 
           {/* Secondary Button */}
@@ -118,7 +120,7 @@ const HeroSection = () => {
               whileTap={{ scale: 0.95 }}
               className="border py-2 px-3 rounded text-[15px] font-montserrat hover:border-black transition"
             >
-              Contact Us
+              {t("hero.contact")}
             </motion.button>
           </NavLink>
         </motion.div>
@@ -150,11 +152,11 @@ const HeroSection = () => {
 
               {/* Title */}
               <h2 className="text-2xl font-semibold text-gray-800 text-center font-clashDisplay mb-2">
-                Request for customize
+                {t("hero.form.title")}
               </h2>
 
               <p className="font-inter text-gray-500 text-sm text-center mb-4">
-                Enter your details below. We’ll send you a demo link once ready.
+               {t("hero.form.subtitle")}
               </p>
 
               {/* Error Message */}
@@ -179,7 +181,7 @@ const HeroSection = () => {
                 {/* Full Name */}
                 <div className="grid gap-y-1">
                   <label className="font-clashDisplay font-medium">
-                    Full Name
+                    {t("hero.form.fullName")}
                   </label>
                   <input
                     required
@@ -194,7 +196,7 @@ const HeroSection = () => {
                 {/* Email */}
                 <div className="grid gap-y-1">
                   <label className="font-clashDisplay font-medium">
-                    Email Address
+                    {t("hero.form.email")}
                   </label>
                   <input
                     required
@@ -209,7 +211,7 @@ const HeroSection = () => {
                 {/* Optional Details */}
                 <div className="grid gap-y-1">
                   <label className="font-clashDisplay font-medium">
-                    Additional Details{" "}
+                    {t("hero.form.details")}{" "}
                     <span className="text-gray-400">(optional)</span>
                   </label>
                   <textarea
@@ -226,7 +228,7 @@ const HeroSection = () => {
                   disabled={loading}
                   className="bg-[#FF4C05] text-white py-2 rounded-lg hover:bg-[#c25124] disabled:opacity-50 disabled:cursor-not-allowed transition"
                 >
-                  {loading ? "Submitting..." : "Submit Request"}
+                  {loading ? t("common.submitting") : t("common.submit")}
                 </button>
               </form>
             </motion.div>

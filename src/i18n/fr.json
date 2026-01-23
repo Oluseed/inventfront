@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "pricing": "Tarifs",
+    "product": "Notre produit",
+    "shop": "Boutique",
+    "contact": "Contactez-nous",
+    "viewDemo": "Voir la démo",
+    "language": "Langue"
+  },
+  "common": {
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "close": "Fermer"
+  },
+  "hero": {
+    "title": {
+      "line1": "Optimisez votre",
+      "line2": "entreprise avec un",
+      "highlight": "inventaire",
+      "line3": "intelligent et des analyses"
+    },
+    "subtitle": "Renforcez votre entreprise avec une gestion avancée des stocks et des analyses détaillées.",
+    "request": "Demander une personnalisation",
+    "contact": "Contactez-nous",
+    "form": {
+      "title": "Demande de personnalisation",
+      "subtitle": "Saisissez vos informations ci-dessous. Nous vous enverrons un lien de démonstration une fois prêt.",
+      "fullName": "Nom complet",
+      "email": "Adresse e-mail",
+      "details": "Informations supplémentaires (optionnel)"
+    }
+  },
+  "hero2": {
+    "laptopAlt": "Vue du logiciel Olastute sur ordinateur portable",
+    "ipadAlt": "Vue du logiciel Olastute sur iPad",
+    "phoneAlt": "Vue du logiciel Olastute sur téléphone"
+  },
+  "getStarted": {
+    "title": "Le logiciel Olastute s’adapte parfaitement à votre entreprise",
+    "cta": "Commencez maintenant"
+  },
+  "inventory": {
+    "heading": {
+      "before": "Découvrez sans effort",
+      "highlight": "olastute smart",
+      "after": "des solutions d’inventaire pour votre entreprise"
+    },
+    "cards": {
+      "management": {
+        "title": "Gestion des stocks",
+        "desc": "Gérez efficacement vos stocks avec des mises à jour et un suivi en temps réel."
+      },
+      "expirations": {
+        "title": "Suivi des dates d’expiration",
+        "desc": "Recevez des alertes lorsque les produits approchent de leur date d’expiration pour minimiser le gaspillage."
+      },
+      "lowStock": {
+        "title": "Alertes de stock faible",
+        "desc": "Restez informé des niveaux de stock grâce à des alertes automatiques."
+      },
+      "salesAnalytics": {
+        "title": "Analyses des ventes",
+        "desc": "Obtenez des informations sur vos performances commerciales avec des rapports détaillés."
+      },
+      "productTracking": {
+        "title": "Suivi des produits",
+        "desc": "Suivez le mouvement de chaque produit dans votre inventaire pour plus de visibilité."
+      }
+    }
+  },
+  "manageStore": {
+    "title": {
+      "highlight": "Gérer le magasin",
+      "rest": "sans barrières avec Olastute"
+    },
+    "imageAlt": "Illustration de la gestion du magasin",
+    "cards": {
+      "zeroDelay": {
+        "heading": "Zéro délai",
+        "description": "Recevez des mises à jour instantanées sur les niveaux de stock, les commandes et les mouvements — sans attente."
+      },
+      "noHiddenFee": {
+        "heading": "Aucun frais caché",
+        "description": "Profitez d'une transparence totale avec nos tarifs — sans frais d'installation ni coûts cachés."
+      },
+      "alerts": {
+        "heading": "Alertes & Notifications",
+        "description": "Restez informé grâce à des alertes en temps réel sur les stocks et les commandes, pour ne jamais manquer une mise à jour critique."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Ce qu’ils disent de nous",
+    "1": {
+      "name": "Alix Beckstrand",
+      "role": "Associée aux opérations chez Healf",
+      "text": "Application incroyable. Offre une excellente vue sur les stocks actuels et futurs. Nous avons réduit les ruptures de stock de 4 % à 1 % en 2 mois avec Prediko. Cela représente des centaines de milliers de revenus supplémentaires par an ! L'équipe est très réactive à toutes les demandes ! Je recommande vivement !"
+    },
+    "2": {
+      "name": "John Smith",
+      "role": "Responsable des opérations chez XYZ",
+      "text": "Prediko a changé notre façon de gérer l'inventaire. L'analyse prédictive nous a permis de réduire considérablement les pertes et d'améliorer notre efficacité. Absolument recommandé !"
+    },
+    "3": {
+      "name": "Sarah Johnson",
+      "role": "Responsable de la chaîne d'approvisionnement chez ABC Corp",
+      "text": "Les analyses fournies par Prediko sont inégalées. Les ruptures de stock sont rares et nous avons économisé beaucoup en optimisant nos niveaux de stock."
+    },
+    "4": {
+      "name": "Michael Lee",
+      "role": "Directeur des opérations chez DEF",
+      "text": "Simple, intuitif et puissant. Les alertes nous ont sauvé à plusieurs reprises de surventes. Indispensable pour toute entreprise."
+    },
+    "5": {
+      "name": "Anna Kim",
+      "role": "Responsable des stocks chez GHI Ltd",
+      "text": "Révolutionnaire pour la gestion des stocks. La précision des prévisions est excellente et l’équipe de support est formidable !"
+    }
+  },
+  "aboutHero": {
+    "title": {
+      "line1": "Simplifier la gestion de",
+      "line2": "vos",
+      "highlight": "opérations d'inventaire"
+    },
+    "subtitle": "Suivez les stocks en temps réel, évitez les ruptures et prenez des décisions de réapprovisionnement plus intelligentes en toute simplicité. Notre système vous offre une visibilité totale sur l'inventaire de votre entreprise — à tout moment et en tout lieu."
+  },
+  "roots": {
+    "heading": {
+      "part1": "Favoriser",
+      "part2": "la gestion intelligente des stocks"
+    },
+    "subtitle": "Nous construisons l'avenir du contrôle des stocks — plus intelligent, plus rapide et mieux connecté pour les entreprises de toutes tailles.",
+    "mission": {
+      "iconAlt": "icône de mission",
+      "title": "Notre Mission",
+      "description": "Simplifier la manière dont les entreprises suivent, gèrent et optimisent leur inventaire en fournissant des solutions intuitives, automatisées et basées sur les données, permettant de gagner du temps et de réduire le gaspillage."
+    },
+    "vision": {
+      "iconAlt": "icône de vision",
+      "title": "Notre Vision",
+      "description": "Devenir la plateforme de gestion des stocks de référence qui aide les entreprises à rester en contrôle, prendre des décisions éclairées et se développer en toute confiance dans un monde axé sur les données."
+    }
+  },
+  "currencies": {
+    "heading": {
+      "highlight": "Devises",
+      "rest": "que nous supportons"
+    },
+    "dataOne": [
+      { "text": "Naira Nigérian" },
+      { "text": "Cedi Ghanéen" },
+      { "text": "Dollar Américain" }
+    ],
+    "dataTwo": [
+      { "text": "Euro" },
+      { "text": "Shilling Kényan" },
+      { "text": "Dirham des ÉAU" }
+    ],
+    "dataThree": [
+      { "text": "CA CFAO - XAF" },
+      { "text": "Shilling Ougandais" }
+    ]
+  },
+  "faq": {
+    "heading": {
+      "highlight": "Questions",
+      "rest": "Fréquemment Posées"
+    },
+    "subtitle": "Tout ce que vous devez savoir sur l'utilisation de notre système de gestion des stocks.",
+    "items": [
+      {
+        "title": "Comment fonctionne le système ?",
+        "description": "Notre système de gestion des stocks vous aide à suivre les produits, les niveaux de stock et les ventes en temps réel. Une fois les articles ajoutés, le système met automatiquement à jour les quantités lorsque des ventes ou des achats se produisent, vous donnant des informations précises et à jour."
+      },
+      {
+        "title": "Comment créer un compte ?",
+        "description": "Cliquez sur le bouton “S'inscrire”, remplissez les détails de votre entreprise et vérifiez votre adresse e-mail. Une fois vérifié, vous pouvez commencer à ajouter des produits, gérer le stock et accéder à votre tableau de bord analytique."
+      },
+      {
+        "title": "Mes données sont-elles sécurisées ?",
+        "description": "Absolument. Nous utilisons un chiffrement de niveau bancaire, un stockage cloud sécurisé et des sauvegardes régulières pour garantir que les données de votre entreprise restent sûres et privées à tout moment."
+      },
+      {
+        "title": "Puis-je accéder à la plateforme sur mobile ?",
+        "description": "Oui, notre plateforme est entièrement responsive et fonctionne parfaitement sur smartphones et tablettes, vous permettant de gérer votre inventaire depuis n’importe où."
+      },
+      {
+        "title": "Offrez-vous un support client ?",
+        "description": "Oui, notre équipe de support est disponible 24h/24 et 7j/7 via chat et e-mail pour vous aider à résoudre les problèmes ou vous guider dans l’utilisation de toute fonctionnalité du système."
+      }
+    ]
+  },
+  "pricingHero": {
+    "row1": {
+      "title1": "Collecte Transparente",
+      "and": "et",
+      "title2": "Transparente"
+    },
+    "row2": {
+      "title": "Tarification des Décaissements"
+    },
+    "paragraph": "Notre tarification est conçue pour rester simple, transparente et équitable. Vous ne payez que pour ce que vous utilisez — sans frais cachés ni plans compliqués. Que vous soyez une petite entreprise ou une grande entreprise, notre structure flexible garantit que vous disposez des outils nécessaires pour gérer, suivre et développer efficacement votre inventaire.",
+    "contactButton": "Contactez-nous"
+  },
+  "products": {
+    "list": [
+      {
+        "id": 1,
+        "title": "Point de Vente",
+        "content": [
+          "Accélérez le traitement des commandes dans votre restaurant grâce à un écran de vente personnalisable et des modificateurs d’articles",
+          "Appliquez facilement des remises et lancez des promotions efficaces",
+          "Créez, enregistrez et modifiez les commandes, permettant aux clients de payer quand cela leur convient",
+          "Proposez des remboursements complets ou partiels pour la commodité des clients",
+          "Suivez les mouvements de caisse, y compris les ventes, les remboursements, les entrées/sorties et le montant attendu dans le tiroir-caisse"
+        ],
+        "navigateTo": "#"
+      },
+      {
+        "id": 2,
+        "title": "Gestion des Stocks",
+        "content": [
+          "Suivez les niveaux de stock en temps réel",
+          "Recevez des alertes automatiques en cas de stock faible",
+          "Surveillez les ventes par type de paiement avec des détails sur le cash, la carte et d’autres méthodes de paiement"
+        ],
+        "navigateTo": "#"
+      },
+      {
+        "id": 3,
+        "title": "Fidélité des Clients",
+        "content": [
+          "Récompensez vos clients fidèles avec des points",
+          "Offrez des remises ciblées selon l’historique des achats",
+          "Connectez une imprimante de reçus, une imprimante de cuisine et un tiroir-caisse pour des opérations optimisées",
+          "Envoyez les commandes à l’écran de cuisine pour réduire les erreurs, accélérer le service et organiser les opérations sans papier",
+          "Connectez l’application Loyverse Customer Display pour afficher les détails des commandes à vos clients pour plus de transparence et de commodité"
+        ],
+        "navigateTo": "#"
+      }
+    ],
+    "button": "Explorer Maintenant"
+  },
+  "section1": {
+    "row1": {
+      "title1": "Outils pour gérer chaque aspect"
+    },
+    "row2": {
+      "title": "de votre inventaire et de vos ventes"
+    },
+    "paragraph": "Simplifiez vos opérations quotidiennes avec le suivi des stocks en temps réel, les alertes de réapprovisionnement automatisées et l’analyse avancée. Notre plateforme vous aide à obtenir une visibilité complète et un contrôle total sur la performance de votre entreprise — à tout moment et partout."
+  },
+  "filterBar": {
+    "categories": {
+      "All": "Tous",
+      "Electronics": "Électronique",
+      "Furniture": "Meubles",
+      "Clothing": "Vêtements",
+      "Accessories": "Accessoires",
+      "Kitchen": "Cuisine"
+    }
+  },
+  "productCard": {
+    "buttons": {
+      "buyNow": "Acheter"
+    },
+    "pricePrefix": "#"
+  },
+  "productModal": {
+    "whatsapp": {
+      "button": "Discuter sur WhatsApp",
+      "messagePrefix": "Bonjour, je souhaite obtenir des informations sur le produit : "
+    },
+    "close": "✕"
+  },
+  "contactForm": {
+    "heading": "Nous sommes adaptés à vos besoins",
+    "description": "Que vous souhaitiez collaborer, demander un devis ou simplement poser quelques questions — nous sommes là pour vous aider. Notre équipe vous répondra dans les 24 heures. Donnons vie à vos idées ensemble.",
+    "fullName": "Nom complet",
+    "email": "Email",
+    "phoneNumber": "Numéro de téléphone",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous davantage de votre projet ou demande...",
+    "terms": "J’accepte les Conditions d’utilisation et la Politique de confidentialité",
+    "submit": "Envoyer votre message",
+    "contactDetails": "Préférez-vous parler directement ? Contactez-nous à {{email}} ou appelez {{phone}}."
+  },
+  "getInTouch": {
+    "heading": "Contactez-nous",
+    "description": "Vous avez une question sur nos solutions d’inventaire ou besoin d’aide pour gérer votre entreprise plus efficacement ? Notre équipe de support est toujours prête à vous assister. Contactez-nous et nous vous répondrons dès que possible."
+  },
+  "footer": {
+    "company": "ENTREPRISE",
+    "legal": "LÉGAL",
+    "resources": "RESSOURCES",
+    "about": "À propos",
+    "pricing": "Tarification",
+    "contact": "Contactez-nous",
+    "legalPage": "Légal",
+    "terms": "Conditions générales",
+    "privacy": "Politique de confidentialité",
+    "others": "Autres",
+    "payment": "Passerelles de paiement sécurisées",
+    "location": "État d'Osun, Nigeria"
+  }
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import icon_1 from '../../assets/images/pricing-icon-1.svg';
 import icon_2 from '../../assets/images/pricing-icon-2.svg';
 import icon_3 from '../../assets/images/pricing-icon-3.svg';
 import icon_4 from '../../assets/images/pricing-icon-4.svg';
-import icon_5 from '../../assets/images/pricing-icon-5.svg';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -12,6 +12,8 @@ const fadeInUp = {
 };
 
 const Section1 = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="pricing-hero" className="bg-cover bg-center h-110 md:h-160 flex">
       <motion.div
@@ -23,13 +25,9 @@ const Section1 = () => {
           show: { opacity: 1, transition: { staggerChildren: 0.2 } },
         }}
       >
-        {/* Content */}
         <div className="text-center lg:ml-5">
           {/* Row 1 */}
-          <motion.div
-            className="md:mt-10 flex flex-wrap items-center justify-center px-4"
-            variants={fadeInUp}
-          >
+          <motion.div className="md:mt-10 flex flex-wrap items-center justify-center px-4" variants={fadeInUp}>
             <motion.img
               src={icon_1}
               alt="inventory-icon"
@@ -38,7 +36,7 @@ const Section1 = () => {
               transition={{ type: 'spring', stiffness: 200 }}
             />
             <h1 className="font-clashDisplay text-[#070707] text-2xl sm:text-3xl md:text-5xl font-medium text-center">
-              Tools to manage every part
+              {t('section1.row1.title1')}
             </h1>
 
             <motion.img
@@ -51,12 +49,9 @@ const Section1 = () => {
           </motion.div>
 
           {/* Row 2 */}
-          <motion.div
-            className="flex flex-wrap items-center justify-center px-4 sm:ml-10 md:ml-20"
-            variants={fadeInUp}
-          >
+          <motion.div className="flex flex-wrap items-center justify-center px-4 sm:ml-10 md:ml-20" variants={fadeInUp}>
             <h1 className="font-clashDisplay text-[#070707] text-2xl sm:text-3xl md:text-5xl font-medium text-center">
-              of your inventory and sales
+              {t('section1.row2.title')}
             </h1>
             <motion.img
               src={icon_3}
@@ -67,10 +62,7 @@ const Section1 = () => {
           </motion.div>
 
           {/* Paragraph */}
-          <motion.div
-            className="flex items-start sm:mx-2 md:mx-10"
-            variants={fadeInUp}
-          >
+          <motion.div className="flex items-start sm:mx-2 md:mx-10" variants={fadeInUp}>
             <div className="flex-shrink-0 hidden sm:block">
               <motion.img
                 src={icon_4}
@@ -81,10 +73,7 @@ const Section1 = () => {
               />
             </div>
             <p className="ml-3 sm:ml-4 text-[#5E5E5E] text-sm sm:text-xl leading-relaxed font-inter">
-              Simplify your daily operations with real-time stock tracking,
-              automated restocking alerts, and advanced analytics. 
-              Our platform helps you gain full visibility and control over 
-              your business performance — anytime, anywhere.
+              {t('section1.paragraph')}
             </p>
           </motion.div>
         </div>

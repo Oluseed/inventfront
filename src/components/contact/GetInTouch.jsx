@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import Arrow from "../../assets/images/contact-arrow.png";
 import EmailIcon from "../../assets/images/contact-icon-1.png";
@@ -7,6 +8,8 @@ import PhoneIcon from "../../assets/images/contact-icon-2.png";
 import LocationIcon from "../../assets/images/contact-icon-3.png";
 
 export const GetInTouch = () => {
+  const { t } = useTranslation();
+
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: (i) => ({
@@ -26,13 +29,12 @@ export const GetInTouch = () => {
     {
       id: 2,
       icon: PhoneIcon,
-      title: ["+234 806 685 9951"],
+      title: ["+234 707 395 1246"],
     },
     {
       id: 3,
       icon: LocationIcon,
-      title:
-        "Olaoluwa Estate, Okinni, Osun State, Nigeria",
+      title: t("footer.location"),
     },
   ];
 
@@ -41,13 +43,11 @@ export const GetInTouch = () => {
       <div className="bg-[#000000CC] pb-12 pt-10 mx-auto max-w-7xl rounded-2xl">
         {/* Heading */}
         <h1 className="font-clashDisplay font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white text-center">
-          Get in touch with us
+          {t("getInTouch.heading")}
         </h1>
 
         <p className="font-inter font-normal text-sm md:text-base text-[#FFFFFF] text-center max-w-2xl mx-auto px-4 sm:px-8 mt-4">
-          Have a question about our inventory solutions or need help managing
-          your business more efficiently? Our support team is always ready to
-          assist. Reach out and we’ll get back to you as soon as possible.
+          {t("getInTouch.description")}
         </p>
 
         {/* Cards */}
@@ -76,10 +76,7 @@ export const GetInTouch = () => {
               {/* Content */}
               {Array.isArray(card.title) ? (
                 card.title.map((line, idx) => (
-                  <h1
-                    key={idx}
-                    className="font-clashDisplay font-medium text-gray-600"
-                  >
+                  <h1 key={idx} className="font-clashDisplay font-medium text-gray-600">
                     {line}
                   </h1>
                 ))

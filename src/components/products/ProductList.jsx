@@ -1,45 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import image_1 from "../../assets/images/product-1.png";
 import image_2 from "../../assets/images/product-2.png";
 import image_3 from "../../assets/images/product-3.png";
 
 export const ProductList = () => {
-  const productList = [
-    {
-      id: 1,
-      title: "Point of Sale",
-      image: image_1,
-      content: [
-        "Speed up order processing in your restaurant with customizable sales screen and item modifiers",
-        "Easily apply discounts and run effective promotions",
-        "Create, save, and edit orders, letting customers pay when it’s convenient",
-        "Offer full or partial refunds for customer convenience",
-        "Keep track of cash movements, including sales, refunds, pay-ins/outs, and the expected cash amount in a drawer",
-      ],
-      navigateTo: "#",
-    },
-    {
-      id: 2,
-      title: "Inventory Management",
-      image: image_2,
-      content: ["Track stock levels in real time", "Get automated low-stock alerts", "Monitor sales by various payment types with breakdowns of cash, card, and other payment methods"],
-      navigateTo: "#",
-    },
-    {
-      id: 3,
-      title: "Customer Loyalty",
-      image: image_3,
-      content: [
-        "Reward your loyal customers with points",
-        "Offer targeted discounts based on purchase history",
-        "Connect a receipt printer, kitchen printer, and cash drawer for enhanced operations",
-        "Send orders to the kitchen display to reduce errors, speed up service, and keep operations organized with a paperless system",
-        "Connect the Loyverse Customer Display app to show order details to your customers for greater transparency and convenience"
-      ],
-      navigateTo: "#",
-    },
-  ];
+  const { t } = useTranslation();
+
+  const productList = t("products.list", { returnObjects: true });
 
   return (
     <div className="grid place-content-center gap-16">
@@ -66,7 +35,13 @@ export const ProductList = () => {
               viewport={{ once: true }}
             >
               <img
-                src={product.image}
+                src={
+                  product.id === 1
+                    ? image_1
+                    : product.id === 2
+                    ? image_2
+                    : image_3
+                }
                 alt={product.title}
                 className="w-70 h-70 lg:w-100 lg:h-100 rounded-2xl shadow-lg"
               />
@@ -88,12 +63,12 @@ export const ProductList = () => {
                   <li key={i}>{point}</li>
                 ))}
               </ul>
-              {/* Button */}
+
               <a
                 href={product.navigateTo}
                 className="bg-[#FF4C05] text-white px-6 w-50 py-2 rounded-lg font-clashDisplay font-light hover:bg-[#1E293B] transition flex place-content-center"
               >
-                Explore Now
+                {t("products.button")}
               </a>
             </motion.div>
           </motion.div>
