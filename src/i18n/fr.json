@@ -19,9 +19,9 @@
       "line1": "Optimisez votre",
       "line2": "entreprise avec un",
       "highlight": "inventaire",
-      "line3": "intelligent et des analyses"
+      "line3": "intelligent et Solutions de commerce électronique"
     },
-    "subtitle": "Renforcez votre entreprise avec une gestion avancée des stocks et des analyses détaillées.",
+    "subtitle": "Renforcez votre entreprise avec une gestion avancée des stocks et Solutions de commerce électronique détaillées.",
     "request": "Demander une personnalisation",
     "contact": "Contactez-nous",
     "form": {
@@ -59,10 +59,6 @@
       "lowStock": {
         "title": "Alertes de stock faible",
         "desc": "Restez informé des niveaux de stock grâce à des alertes automatiques."
-      },
-      "salesAnalytics": {
-        "title": "Analyses des ventes",
-        "desc": "Obtenez des informations sur vos performances commerciales avec des rapports détaillés."
       },
       "productTracking": {
         "title": "Suivi des produits",
@@ -123,7 +119,7 @@
     "title": {
       "line1": "Simplifier la gestion de",
       "line2": "vos",
-      "highlight": "opérations d'inventaire"
+      "highlight": "opérations d'inventaire et de commerce électronique"
     },
     "subtitle": "Suivez les stocks en temps réel, évitez les ruptures et prenez des décisions de réapprovisionnement plus intelligentes en toute simplicité. Notre système vous offre une visibilité totale sur l'inventaire de votre entreprise — à tout moment et en tout lieu."
   },

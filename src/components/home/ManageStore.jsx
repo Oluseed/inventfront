@@ -50,7 +50,7 @@ const ManageStore = () => {
 
         <div className="mt-5 flex flex-col md:flex-row items-center">
           {/* Animated Image */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -61,7 +61,7 @@ const ManageStore = () => {
               alt={t("manageStore.imageAlt")}
               className="px-10 w-100 h-full md:w-150 lg:h-auto place-self-center"
             />
-          </motion.div>
+          </motion.div> */}
 
           {/* Animated Feature Cards */}
           <motion.div
@@ -74,7 +74,7 @@ const ManageStore = () => {
               show: { opacity: 1, transition: { staggerChildren: 0.3 } },
             }}
           >
-            <div className="mx-5 flex flex-col gap-y-3">
+            <div className="mx-5 flex flex-row gap-x-3">
               {data.map((item) => (
                 <motion.div
                   key={item.id}

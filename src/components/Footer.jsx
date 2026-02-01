@@ -7,10 +7,26 @@ import logo from "../assets/images/olastute logo.png";
 import { NavLink } from "react-router-dom";
 
 const socialIcons = [
-  { id: 1, icon: <FaInstagram size={22} className="text-black" /> },
-  { id: 2, icon: <FaFacebook size={22} className="text-black" /> },
-  { id: 3, icon: <FaX size={22} className="text-black" /> },
-  { id: 4, icon: <FaLinkedin size={22} className="text-black" /> },
+  {
+    id: 1,
+    icon: <FaInstagram size={22} className="text-black" />,
+    link: "https://www.instagram.com/olastute?utm_source=qr&igsh=Y3QydnE5dzBmZnZk",
+  },
+  {
+    id: 2,
+    icon: <FaFacebook size={22} className="text-black" />,
+    link: "https://www.facebook.com/share/1AMaP8PaHD/",
+  },
+  {
+    id: 3,
+    icon: <FaX size={22} className="text-black" />,
+    link: "https://x.com/olastute",
+  },
+  {
+    id: 4,
+    icon: <FaLinkedin size={22} className="text-black" />,
+    link: "https://www.linkedin.com/company/olastute", // change if you have exact link
+  },
 ];
 
 const containerVariants = {
@@ -47,15 +63,18 @@ const Footer = () => {
           <h1>{t("footer.location")}</h1>
           <div className="grid gap-y-3 sm:flex sm:gap-x-2">
             {socialIcons.map((item) => (
-              <motion.div
+              <motion.a
                 key={item.id}
-                className="bg-[#E0E0E0] w-10 h-10 flex items-center justify-center rounded"
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#E0E0E0] hover:bg-[#FF4C05] w-10 h-10 flex items-center justify-center rounded transition-colors"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 {item.icon}
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </motion.div>

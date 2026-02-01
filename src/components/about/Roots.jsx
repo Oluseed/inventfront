@@ -38,7 +38,7 @@ const Roots = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         {/* Heading */}
-        <motion.div className="grid place-content-center gap-y-3" variants={fadeUp}>
+        {/* <motion.div className="grid place-content-center gap-y-3" variants={fadeUp}>
           <h1 className="mt-4 font-clashDisplay font-medium text-3xl md:text-5xl text-center">
             {t('roots.heading.part1')}{' '}
             <span className="block md:inline border-2 p-2 w-50 place-self-center rounded-4xl border-[#FF4C05]">
@@ -49,7 +49,7 @@ const Roots = () => {
           <p className="px-1 font-inter text-center font-normal text-[#5E5E5E] text-[14px]">
             {t('roots.subtitle')}
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Mission and Vision */}
         <motion.div

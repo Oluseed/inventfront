@@ -19,9 +19,9 @@
       "line1": "Streamline your",
       "line2": "business with smart",
       "highlight": "inventory",
-      "line3": "and analytics"
+      "line3": "and e-commerce solutions"
     },
-    "subtitle": "Empower your business with advanced inventory management and analytics.",
+    "subtitle": "Empower your business with advanced inventory management and e-commerce solutions.",
     "request": "Request for customization",
     "contact": "Contact Us",
     "form": {
@@ -60,10 +60,6 @@
         "title": "Low Stock Alerts",
         "desc": "Stay on top of stock levels with automatic alerts."
       },
-      "salesAnalytics": {
-        "title": "Sales Analytics",
-        "desc": "Gain insights into your sales performance with detailed reports."
-      },
       "productTracking": {
         "title": "Product Tracking",
         "desc": "Track each product's movement within your inventory for visibility."
@@ -101,7 +97,7 @@
     "2": {
       "name": "John Smith",
       "role": "Head of Operations at XYZ",
-      "text": "Prediko changed the way we manage inventory. The predictive analytics saved us a lot of wasted stock and boosted our efficiency. Absolutely recommend!"
+      "text": "Prediko changed the way we manage inventory. The predictive e-commerce solutions saved us a lot of wasted stock and boosted our efficiency. Absolutely recommend!"
     },
     "3": {
       "name": "Sarah Johnson",
@@ -123,7 +119,7 @@
   "title": {
     "line1": "Simplifying how you manage",
     "line2": "your",
-    "highlight": "inventory operations"
+    "highlight": "inventory and ecommerce operations"
   },
   "subtitle": "Track stock in real time, prevent shortages, and make smarter restocking decisions with ease. Our system gives you full visibility into your business inventory — anytime, anywhere."
 },
@@ -177,7 +173,7 @@
       },
       {
         "title": "How do I create an account?",
-        "description": "Click on the “Sign Up” button, fill in your business details, and verify your email address. Once verified, you can start adding products, managing stock, and accessing your analytics dashboard."
+        "description": "Click on the “Sign Up” button, fill in your business details, and verify your email address. Once verified, you can start adding products, managing stock, and accessing your e-commerce solutions dashboard."
       },
       {
         "title": "Is my data secure?",
@@ -251,7 +247,7 @@
     "row2": {
       "title": "of your inventory and sales"
     },
-    "paragraph": "Simplify your daily operations with real-time stock tracking, automated restocking alerts, and advanced analytics. Our platform helps you gain full visibility and control over your business performance — anytime, anywhere."
+    "paragraph": "Simplify your daily operations with real-time stock tracking, automated restocking alerts, and advanced e-commerce solutions. Our platform helps you gain full visibility and control over your business performance — anytime, anywhere."
   },
   "filterBar": {
     "categories": {

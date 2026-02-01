@@ -9,7 +9,7 @@ const HeroSection2 = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative flex justify-center items-center mt-16 mb-10 overflow-hidden">
+    <section className="relative flex justify-center items-center mt-10 mb-10 overflow-hidden">
       <div className="relative w-full max-w-6xl h-[400px] md:h-[520px]">
         {/* Laptop - main */}
         <motion.img
@@ -23,13 +23,23 @@ const HeroSection2 = () => {
 
         {/* iPad - back */}
         <motion.img
-          src={ipad}
-          alt={t("hero2.ipadAlt")}
-          className="absolute left-1/2 top-1/2 w-[65%] -translate-x-[55%] -translate-y-[55%] rounded-2xl shadow-xl z-10"
-          initial={{ opacity: 0, x: -80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.1, ease: "easeOut", delay: 0.2 }}
-        />
+        src={ipad}
+        alt={t("hero2.ipadAlt")}
+        className="
+          absolute 
+          left-1/2 
+          top-1/2 
+          w-[60%] md:w-[65%] lg:w-[70%]
+          -translate-x-[55%] -translate-y-[55%]
+          lg:-translate-x-[65%] lg:-translate-y-[50%]
+          rounded-2xl 
+          shadow-xl 
+          z-15
+        "
+        initial={{ opacity: 0, x: -80 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.1, ease: 'easeOut', delay: 0.2 }}
+      />
 
         {/* Phone - front */}
         <motion.img
